@@ -1,0 +1,100 @@
+/* 기본 폰트 */
+@mixin basicFont {
+  font-size:14px;
+  line-height:18px;
+  color:$text-font-color;
+  font-family:$text-font-family;
+}
+/* float 해제 */
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+    *zoom:1;
+  }
+}
+/* 대체 텍스트 */
+@mixin ir_pm {
+  display:block;
+  overflow:hidden;
+  font-size:0;
+  line-height:0;
+  text-indent:-9999px;
+}
+@mixin screen_out {
+  overflow:hidden;
+  position:absolute;
+  left:-9999px;
+  width:1px;
+  height:1px;
+  font-size:0;
+  line-height:0;
+  text-indent:-9999px;
+}
+/* 말줄임 */
+@mixin text-overflow {
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  word-wrap:normal;
+}
+@mixin text-overflow-multi($maxHeight, $line) {
+  max-height:$maxHeight;
+  overflow:hidden;
+  display:-webkit-box;
+  -webkit-line-clamp:$line;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+/* 프리픽스 */
+@mixin prefix($property, $value) {
+  #{-webkit-$property}: $value;
+     #{-moz-$property}: $value;
+          #{$property}: $value;
+}
+/* 키프레임 */
+@mixin vendor-keyframes($name) {
+  /* @-moz-keyframes #{$name} { @content; } */
+  @-webkit-keyframes #{$name} { @content; }
+  /* @-o-keyframes #{$name} { @content; }
+  @-ms-keyframes #{$name} { @content; } */
+  @keyframes #{$name} { @content; }
+}
+/* 반응형 */
+$breakpoints: (
+  'm_sm': (max-device-width: 320px),
+  'm_md': (min-device-width: 320px) and (max-device-width: 414px),
+  'm_lg': (max-device-width: 736px),
+  't_sm': (max-device-width: 768px),
+  't_md': (max-device-width: 1024px),
+  'sm': (max-width: 800px),
+  'md': (max-width: 1400px),
+  'lg': (min-width: 1401px),
+);
+
+@mixin respond-to($breakpoint, $mode) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(type-of($raw-query) == 'string', unquote($raw-query), inspect($raw-query));
+
+    @if $mode == 'portrait' {
+      @media #{$query} and (orientation: portrait) {
+        @content;
+      }
+    } @else if $mode == 'landscape' {
+      @media #{$query} and (orientation: landscape)  {
+        @content;
+      }
+    } @else {
+      @media #{$query} {
+        @content;
+      }
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. '
+         + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
