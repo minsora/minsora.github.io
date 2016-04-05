@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+ <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title> 입양/임시보호신청 </title>
+	<link rel="stylesheet" type="text/css" href="css/application.css" />
+ </head>
+
+ <body>
+	<form action="#">
+		<fieldset>
+			<legend><img src="images/ap_top.gif" alt="CARE 입양 신청 양식 CARE의 유기견 입양을 신청해주셔서 감사드립니다. 상처받은 유기견의 가족으로 CARE와 함께 따듯한 동행을 해주시기 바랍니다." /></legend>
+
+			<h5><img src="images/ap_tit.gif" alt="CARE 유기견 입양 신청 양식" /></h5>
+			<p class="topTxt"><span>*</span>필수 입력 사항입니다.</p>
+
+			<table summary="CARE 유기견 입양 신청 양식">
+				<caption class="h">
+					입양/임시보호신청 양식입니다. 성명,전화번호,휴대폰,주소,이메일,파일첨부,질의양식 작성해주세요.
+				</caption>
+				<tbody>
+					<tr>
+						<th class="first"><label for="name"><span>*</span>성명</label></th>
+						<td class="first"><input type="text" id="name" name="name" /></td>
+					</tr>
+					<tr>
+						<th>전화번호</th>
+						<td>
+							<select>
+								<option value="">선택</option>
+								<option value="02">02</option>
+								<option value="032">032</option>
+								<option value="031">031</option>
+								<option value="041">041</option>
+							</select>
+							- <input type="text" id="tel1" name="tel1" class="wNum" />
+							- <input type="text" id="tel2" name="tel2" class="wNum" />
+						</td>
+					</tr>
+					<tr>
+						<th><span>*</span>휴대폰</th>
+						<td>
+							<select>
+								<option value="">선택</option>
+								<option value="010">010</option>
+								<option value="011">011</option>
+								<option value="016">016</option>
+								<option value="017">017</option>
+								<option value="018">018</option>
+							</select>
+							- <input type="text" id="cellphone1" name="cellphone1" class="wNum" />
+							- <input type="text" id="cellphone2" name="cellphone2" class="wNum" />
+							SMS 문자 수신을 받으시겠습니까?
+							<input type="radio" id="yes" name="sms" value="yes" /><label for="yes">예</label>
+							<input type="radio" id="no" name="sms" value="no" checked="checked" /><label for="no">아니오</label>
+						</td>
+					</tr>
+					<tr>
+						<th><span>*</span>주소</th>
+						<td>
+							<input type="text" id="postcode1" name="postcode1" class="w100" /> - 
+							<input type="text" id="postcode2" name="postcode2" class="w100" />
+							<input type="image" src="images/ap_btn01.gif" alt="우편번호 찾기" class="btn" /><br />
+							<input type="text" id="address1" name="address1" /><br />
+							<input type="text" id="address2" name="address2" />
+						</td>
+					</tr>
+					<tr>
+						<th><label for="e-mail1">이메일</label></th>
+						<td>
+							<input type="text" id="e-mail1" name="e-mail1" class="w100" /> @ 
+							<input type="text" id="e-mail2" name="e-mail2" class="w100" />
+							<select>
+								<option value="">선택</option>
+								<option value="naver.com">naver.com</option>
+								<option value="hanmail.net">hanmail.net</option>
+								<option value="daum.net">daum.net</option>
+								<option value="yahoo.co.kr">yahoo.co.kr</option>
+								<option value="직접작성">직접작성</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>파일첨부</th>
+						<td>
+							<input type="text" id="file" name="file" />
+							<input type="image" src="images/ap_btn02.gif" alt="찾아보기" class="btn" />
+						</td>
+					</tr>
+					<tr>
+						<th><span>*</span>질의양식</th>
+						<td>
+							<textarea cols="100" rows="50" name="qna" id="qna">
+
+아래의 13문항 모두 작성해 주시고, 저장 누르시면 자동 접수 됩니다. 
+저장 이후에는 작성하신 글을 다시 확인할 수 없으니 신중하게 저장해주세요.
+
+1. 현재 신청인이 입양하기를 희망하는 천사가 없을 경우 앞으로 입양하고자 하는 동물에 대하여 간단히 
+설명하여 주시기 바랍니다. 
+
+2. 반려동물을 입양하려는 이유: 
+
+
+3. 입양의 결정에 가족 모두 동의하십니까?( )   
+① 동의   ② 일부동의     ③ 동의하지 않음 
+
+4. 반려동물을 키워 본 경험이 있습니까?(  )   
+① 네     ② 아니오 
+
+5. 과거의 반려동물의 종류는?(  )   
+① 개     ② 고양이       ③ 기타 (                         ) 
+
+6. 과거에 키운 반려동물은 어떻게 되었나요?(  ) 
+① 자연사  ② 병사  ③ 사고사 ④ 양도  ⑤ 매매  ⑥ 가출  ⑦ 유실    ⑧ 유기 
+
+7. 현재 반려동물을 키우고 계십니까?(   ) 
+
+8. 7에서 ‘네’인 경우에  반려동물의 종류와 수는?  
+
+9. 주거의 형태는? (  ) 
+① 단독주택 ② 공동주택  ③ 전원주택  ④ 농장주택 
+
+10. 9 에서 주거의 형태가 공동주택의 경우 그 종류는? (  ) 
+① 복도식 아파트  ② 계단식 아파트  ③ 빌라  ④ 원룸  ⑤ 오피스텔 
+
+11. 이사, 또는 해외로 이주 시에 반려동물의 거취문제에 대해 어떻게 생각하십니까? 
+
+
+12. 미혼의 경우, 앞으로 결혼, 임신, 출산 시에 입양하신 반려동물의 
+거취에 대해 어떻게 생각하십니까?
+
+
+13. CARE에서 반려동물을 입양하시려면, 유기견의 구조와 치료, 보호비로 사용되는 
+일정 금액의 입양 비를 납부하셔야 하며 중성화수술시행 등 CARE의 입양방침에 
+동의하셔야 합니다.   
+동의하십니까? (예/아니오로 적어주세요)
+
+
+입양은 신청서가 접수 된 후에, CARE의 입양담당자가 입양신청인과 인터뷰 및 미팅을 통해 입양여부를 
+결정하며, 신청인의 가족 분 중 한 분과 반드시 1회 이상 통화를 해야 합니다. 
+
+미성년의 경우에는 부모님의 동의를 필요로 하며 신청인의 부모님과의 인터뷰 및 미팅이 있게 됩니다. 
+입양 시에는 신분증사본이나 주민등록등본을 지참하셔야 하며 CARE의 입양동의서에 서명하셔야 합니다.
+
+							</textarea>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<input type="image" src="images/ap_btn.gif" alt="전송하기" class="submit" />
+		</fieldset>
+	</form>
+ </body>
+</html>

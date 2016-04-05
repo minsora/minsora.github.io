@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+@import url(common.css);
+@import url(subCommon.css);
+
+body {font-size:12px;}
+.cont {padding:15px 0 15px 21px; height:540px;}
+	#allBoard {width:756px; border-top:2px solid #5caa00; border-bottom:2px solid #5caa00;}
+	#allBoard dt.first {border-top:1px solid #fff;}
+	#allBoard dt {clear:both; border-top:1px solid #e9e9e9; padding:10px 15px; height:15px; position:relative;}
+	#allBoard dt span {color:#999999; position:absolute; right:15px; top:10px;}
+	#allBoard dt a {font-weight:bold;}
+	#allBoard dd {padding:5px 15px 20px 15px; line-height:16px; height:70px;}
+	#allBoard dd a:hover {color:#aaa;}
+	#allBoard dd img {border:1px solid #e9e9e9; padding:2px 0 0 0; float:left; margin-right:10px;}
+	#allBoard .last {border-bottom:1px solid #fff;}
+	#allBoard p {text-align:center; padding:15px 0;}
+	#allBoard p a {border:1px solid red;}
+
+	.pageNum {text-align:center; padding:15px 0;}
+	.pageNum a span {font-weight:bold;}
+	

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MinSora</title>
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+    <!--[if lte IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+
+    <link rel="shortcut icon" href="/images/favicon_m.ico?v=2" type="image/x-icon">
+    <link rel="icon" href="/images/favicon_m.ico?v=2" type="image/x-icon">
+
+    <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+    <script src="/js/sideBtn.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var pathname = window.location.pathname,
+                $list = $(".list_gnb a");
+
+            $list.each(function(index) {
+                if (pathname.toUpperCase().indexOf($(this).text().toUpperCase()) != -1){
+                    $(this).parent().addClass('on').parent().siblings().removeClass('on');
+                }
+            });
+        });
+    </script>
+</head>
+
+
+    <body>
+
+        <div id="wrapper">
+            <header id="header">
+    <h1 class="logo">
+        <a class="link_profile" href="/">
+            <img src="/images/sr.png" alt="">
+        </a>
+        <a class="link_logo" href="/">MinSora</a>
+    </h1>
+    <strong class="txt_profile">I'm a UI Developer and Designer.</strong>
+    <nav id="nav">
+        <h2>메뉴</h2>
+        <ul class="list_gnb">
+            <li>
+                <a href="/about">About</a>
+            </li>
+            <li>
+                <a href="/project">Project</a>
+            </li>
+            <li>
+                <a href="/portfolio">Portfolio</a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="list_sns">
+        <li><a href="https://www.facebook.com/ssola129" class="link_sns" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/ssola129/" class="link_sns" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://github.com/ssola129" class="link_sns" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+        <li><a href="mailto:ssola129@naver.com" class="link_sns"><i class="fa fa-envelope"></i></a></li>
+    </ul>
+</header>
+
+            <section id="container">
+                <div class="cont_top">
+    <h2>
+        <a class="link_logo" href="/">
+            <img src="/images/profile.jpg" alt="">
+            MinSora
+        </a>
+    </h2>
+    <a href="javascript:;" class="btn_nav"><span class="ico_nav">메뉴 열기/닫기</span></a>
+</div>
+                <section class="cont_sub">
+    <h2>Study</h2>
+    <div class="sub_project">
+        <ul class="list_post">
+            
+            <li>
+                <article class="group_post">
+                    <header>
+                        <strong class="tit_post">javascript <i class="fa fa-commenting-o"></i></strong>
+                        <span class="txt_date">(최근 업데이트 : 18 Jan 2016)</span>
+                    </header>
+                    <section class="post-content">
+                        <a href="/html&css/2016/01/18/javascript.html" class="link_content">
+                            
+
+                            <span class="bottom_btns">
+                                <span class="txt_more">more <i class="fa fa-caret-right"></i></span>
+                            </span>
+                        </a>
+                    </section>
+                </article>
+            
+            <li>
+                <article class="group_post">
+                    <header>
+                        <strong class="tit_post">Sass <i class="fa fa-commenting-o"></i></strong>
+                        <span class="txt_date">(최근 업데이트 : 18 Jan 2016)</span>
+                    </header>
+                    <section class="post-content">
+                        <a href="/html&css/2016/01/18/sass.html" class="link_content">
+                            <!-- Sass : Syntactically Awesome Style Sheets (문법적으로 최고의 스타일 시트)<br>
+특징 : 유지보수 / 코드의 재활용성 / 코드의 간결성 / css의 단점 보완 -->
+
+                            <span class="bottom_btns">
+                                <span class="txt_more">more <i class="fa fa-caret-right"></i></span>
+                            </span>
+                        </a>
+                    </section>
+                </article>
+            
+            <li>
+                <article class="group_post">
+                    <header>
+                        <strong class="tit_post">UI/UX <i class="fa fa-commenting-o"></i></strong>
+                        <span class="txt_date">(최근 업데이트 : 18 Jan 2016)</span>
+                    </header>
+                    <section class="post-content">
+                        <a href="/ui&ux/2016/01/18/ui.html" class="link_content">
+                            
+
+                            <span class="bottom_btns">
+                                <span class="txt_more">more <i class="fa fa-caret-right"></i></span>
+                            </span>
+                        </a>
+                    </section>
+                </article>
+            
+            <li>
+                <article class="group_post">
+                    <header>
+                        <strong class="tit_post">Php <i class="fa fa-commenting-o"></i></strong>
+                        <span class="txt_date">(최근 업데이트 : 01 Jan 2016)</span>
+                    </header>
+                    <section class="post-content">
+                        <a href="/2016/01/01/php.html" class="link_content">
+                            
+
+                            <span class="bottom_btns">
+                                <span class="txt_more">more <i class="fa fa-caret-right"></i></span>
+                            </span>
+                        </a>
+                    </section>
+                </article>
+            
+            <li>
+                <article class="group_post">
+                    <header>
+                        <strong class="tit_post">Jekyll <i class="fa fa-commenting-o"></i></strong>
+                        <span class="txt_date">(최근 업데이트 : 01 Jan 2016)</span>
+                    </header>
+                    <section class="post-content">
+                        <a href="/2016/01/01/jekyll.html" class="link_content">
+                            
+
+                            <span class="bottom_btns">
+                                <span class="txt_more">more <i class="fa fa-caret-right"></i></span>
+                            </span>
+                        </a>
+                    </section>
+                </article>
+            
+            <li>
+                <article class="group_post">
+                    <header>
+                        <strong class="tit_post">Html <i class="fa fa-commenting-o"></i></strong>
+                        <span class="txt_date">(최근 업데이트 : 01 Jan 2016)</span>
+                    </header>
+                    <section class="post-content">
+                        <a href="/2016/01/01/html.html" class="link_content">
+                            
+
+                            <span class="bottom_btns">
+                                <span class="txt_more">more <i class="fa fa-caret-right"></i></span>
+                            </span>
+                        </a>
+                    </section>
+                </article>
+            
+            <li>
+                <article class="group_post">
+                    <header>
+                        <strong class="tit_post">Gulp <i class="fa fa-commenting-o"></i></strong>
+                        <span class="txt_date">(최근 업데이트 : 01 Jan 2016)</span>
+                    </header>
+                    <section class="post-content">
+                        <a href="/2016/01/01/gulp.html" class="link_content">
+                            
+
+                            <span class="bottom_btns">
+                                <span class="txt_more">more <i class="fa fa-caret-right"></i></span>
+                            </span>
+                        </a>
+                    </section>
+                </article>
+            
+            <li>
+                <article class="group_post">
+                    <header>
+                        <strong class="tit_post">Git <i class="fa fa-commenting-o"></i></strong>
+                        <span class="txt_date">(최근 업데이트 : 01 Jan 2016)</span>
+                    </header>
+                    <section class="post-content">
+                        <a href="/2016/01/01/git.html" class="link_content">
+                            
+
+                            <span class="bottom_btns">
+                                <span class="txt_more">more <i class="fa fa-caret-right"></i></span>
+                            </span>
+                        </a>
+                    </section>
+                </article>
+            
+            </li>
+        </ul>
+    </div>
+</div>
+
+            </section>
+            <footer id="footer">
+    <div class="txt_copyright">&copy; minsora 2016. All rights reserved.</div>
+</footer>
+
+            <div class="dimmed" style="display:none;"></div>
+        </div>
+
+    </body>
+
+</html>

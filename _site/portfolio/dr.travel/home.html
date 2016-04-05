@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>dr.travel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- 공통 영역 : 상단 -->
+        <header>
+            <h1 class="screen_out">Dr.travel</h1>
+            <h2 class="tit_page">Home</h2>
+            <nav>
+                <a href="noti.html" class="btn_noti">
+                    <img src="img/navi/icon_notice.png" width="25" height="25" alt="공지">
+                </a>
+                <a href="#none" class="btn_set">
+                    <img src="img/navi/icon_setting.png" width="25" height="25" alt="설정">
+                </a>
+            </nav>
+        </header>
+        <div class="article">
+			<section class="section_swipe">
+				<!--
+					1. 좌우로 스와이프
+					2. 콘텐츠의 넓이, 높이 고정
+					3. 제목이 3줄 이상 처리시 말줄임 처리 완료
+					(*스크립트에 따라 마크업 수정 필요)
+				-->
+				<h3 class="screen_out">베스트 질문</h3>
+				<ul class="list_swipe">
+					<li>
+						<a href="qna.html" class="link_swipe">
+							<span class="txt_swipe">
+								밤에도 안전한 치안 좋은 여행지! 어디가 좋을까요? <br>
+								추천해주세요.
+							</span>
+							<span class="txt_view">본문 보기</span>
+						</a>
+					</li>
+					<li>
+						<a href="qna.html" class="link_swipe">
+							<span class="txt_swipe">
+								싱가폴의 야경을 보며 칠리크랩을 즐기고 싶어요! <br>
+								괜찮은 레스토랑 있을까요롱이~?
+							</span>
+							<span class="txt_view">본문 보기</span>
+						</a>
+					</li>
+					<li>
+						<a href="qna.html" class="link_swipe">
+							<span class="txt_swipe">
+								경유지인 홍콩에서 7시간 정도 관광하려고 해요. <br>
+								가능한 일정일까요?
+							</span>
+							<span class="txt_view">본문 보기</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section class="section_country">
+				<h3 class="tit_country">관심국가 Q&amp;A</h3>
+				<ul class="list_country">
+					<li>
+						<a href="interest.html" class="btn_country">
+							<img src="img/country/btn_korea.png" width="100" height="100" alt="한국">
+						</a>
+					</li>
+					<li>
+						<a href="interest.html" class="btn_country">
+							<img src="img/country/btn_china.png" width="100" height="100" alt="중국">
+						</a>
+					</li>
+					<li>
+						<a href="interest.html" class="btn_country">
+							<img src="img/country/btn_japan.png" width="100" height="100" alt="일본">
+						</a>
+					</li>
+					<li>
+						<a href="interest.html" class="btn_country">
+							<img src="img/country/btn_hongkong.png" width="100" height="100" alt="홍콩">
+						</a>
+					</li>
+					<li>
+						<a href="interest.html" class="btn_country">
+							<img src="img/country/btn_thailand.png" width="100" height="100" alt="태국">
+						</a>
+					</li>
+					<li>
+						<a href="interest.html" class="btn_country">
+							<img src="img/country/btn_vietnam.png" width="100" height="100" alt="베트남">
+						</a>
+					</li>
+					<li>
+						<a href="interest.html" class="btn_country">
+							<img src="img/country/btn_philippines.png" width="100" height="100" alt="필리핀">
+						</a>
+					</li>
+					<li>
+						<a href="interest.html" class="btn_country">
+							<img src="img/country/btn_taiwan.png" width="100" height="100" alt="대만">
+						</a>
+					</li>
+					<li>
+						<a href="interest.html" class="btn_country">
+							<img src="img/country/btn_plus.png" width="100" height="100" alt="추가">
+						</a>
+					</li>
+				</ul>
+			</section>
+		</div>
+ 		<!-- 공통영역 : 탭 바 -->
+        <aside>
+			<ul class="list_tabbar">
+				<li>
+					<a href="home.html" class="btn_tabbar">
+						<img src="img/tabbar/icon_home_off.png" height="23" width="23" alt="">
+						<span class="txt_tabbar">홈</span>
+					</a>
+				</li>
+				<li class="on"><!--해당 페이지 노출시, on 클래스 추가하고 이미지명 _off를 _on 으로 변경-->
+					<a href="qna.html" class="btn_tabbar">
+						<img src="img/tabbar/icon_delivery_on.png" height="23" width="23" alt="">
+						<span class="txt_tabbar">배달질문</span>
+					</a>
+				</li>
+				<li>
+					<a href="#none" class="btn_tabbar">
+						<img src="img/tabbar/icon_tabbar.png" height="23" width="23" alt="">
+						<span class="txt_tabbar">질문하기</span>
+					</a>
+				</li>
+				<li>
+					<a href="search.html" class="btn_tabbar">
+						<img src="img/tabbar/icon_search_off.png" height="23" width="23" alt="">
+						<span class="txt_tabbar">검색</span>
+					</a>
+				</li>
+				<li>
+					<a href="#none" class="btn_tabbar">
+						<img src="img/tabbar/icon_mypage_off.png" height="23" width="23" alt="">
+						<span class="txt_tabbar">마이페이지</span>
+					</a>
+				</li>
+			</ul>
+		</aside>
+    </div>
+</body>
+</html>

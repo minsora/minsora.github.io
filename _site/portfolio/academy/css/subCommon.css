@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+body {background:url(../images/sub_bg.gif) repeat-x left top;}
+
+#subContainer {width:1004px;}
+#subContainer:after {content:""; display:block; clear:both;}
+
+#sidemenu {float:left; width:197px;}
+	#sidemenu h4 {padding:13px 0 38px 7px; background:url(../images/smtit_bg.gif) no-repeat;}
+	#sidemenu p {padding:20px 5px 15px 4px;}
+
+#subCont {float:right; width:794px;}
+	.subTitle {height:69px; position:relative;}
+	.subTitle h4 {float:left; width:280px; padding:15px 21px;}
+	.subTitle p {position:absolute; left:21px; top:43px;}
+	.subTitle ul {float:right; padding:43px 10px 0 0;}
+	.subTitle ul li {float:left; padding-right:2px;}
+	.subTitle ul li a {padding:0 4px; color:#666666; font-size:11px;}
+	.subTitle ul li a span {font-weight:bold; color:#599a3d;}

@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+@import url(common.css);
+@import url(subCommon.css);
+
+body {font-size:12px;}
+.cont {padding:100px 0 200px 15px;}
+	#loginForm {margin:0 auto; width:462px; height:205px; background:url(../images/loginpage_bg.gif) no-repeat;}
+		#login {height:124px; color:#71a517; font-size:12px; padding:33px 14px 0 48px; position:relative;}
+		#login label {}
+		#login a {color:#71a517; font-size:12px;}
+		#login a:hover {text-decoration:underline;}
+		#login li a {font-size:11px;}
+			.selectbox {height:27px; padding-left:92px; padding-bottom:5px;}
+
+			.idbox input,.pwbox input {width:150px;}
+			.idbox label {padding-right:73px;}
+			.pwbox label {padding-right:18px;}
+			.idbox label img, .pwbox label img {background:url(../images/loginpage_dot.gif) no-repeat left 4px;; padding-left:8px;
+												vertical-align:middle;}
+			.pwbox {padding-top:7px;}
+
+			.loginBtn {position:absolute; right:55px; top:65px;}
+
+			.idpwBox {padding-top:25px;}
+			.idpwBox, .joinBtn {width:359px; height:20px;}
+			.idpwBox img, .joinBtn img {float:left;}
+			.idpwBox a, .joinBtn a {float:right;}

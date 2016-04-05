@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+body,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,table,caption,tr,td,dl,dt,dd,ul,ol,li,a,span,img {padding:0; margin:0;}
+fieldset,legend,div {margin:0;padding:0;}
+li {list-style-type:none;}
+fieldset,img {border:0;}
+li img, li a, dl img, img, li {vertical-align:top;}
+address{font-style:normal;}
+.h, #acc{font-size:0; width:0; height:0; line-height:0; position:absolute; left:-9999px;}
+li img, li a {vertical-align:top;}
+
+body {font:11px "돋움",Dotum; color:#848484;}
+span {color:#e77300; padding-right:4px;}
+
+form {width:710px; text-align:center;}
+input,select,textarea {border:1px solid #dadada;}
+input {font-size:11px;}
+label {vertical-align:middle;}
+	#name {width:130px; height:15px;}
+	.wNum {width:35px; height:15px;}
+	.w100 {height:15px; width:100px;}
+	#file {width:130px; height:15px;}
+	#yes, #no {border:0; vertical-align:middle;}
+	#address1, #address2 {width:550px; margin-top:1px; height:15px;}
+
+select {color:#969696; font:11px "돋움",Dotum; height:18px; vertical-align:top;}
+textarea {width:540px; height:153px; padding-left:10px; font:11px "돋움",Dotum;}
+
+.submit {border:0; vertical-align:top; margin-top:15px;}
+
+h5 {background:url(../images/ap_tit_dot.gif) no-repeat 15px 16px; padding:15px 0 10px 30px; float:left;}
+.topTxt {float:right; padding:18px 14px 0 0;}
+.topTxt span {font-weight:bold;}
+
+table {width:680px; border-collapse:collapse; padding:15px 13px; margin:0 auto; text-align:left;}
+	th {width:100px; text-align:left; font-weight:normal; color:#64b200; padding:13px 10px; border-bottom:1px solid #e1dfdf;
+		background-color:#fafafa;}
+	table td {border-bottom:1px solid #e1dfdf; padding:8px 10px;}
+	.first {border-top:2px solid #64b200;}
+	.btn {border:0; vertical-align:top;}

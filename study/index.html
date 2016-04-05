@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<section class="cont_sub">
+    <h2>Study</h2>
+    <div class="sub_project">
+        <ul class="list_post">
+            {% for post in site.posts limit:10 %}
+            <li>
+                <article class="group_post">
+                    <header>
+                        <strong class="tit_post">{{ post.title }} <i class="fa fa-commenting-o"></i></strong>
+                        <span class="txt_date">(최근 업데이트 : {{ post.date | date_to_string }})</span>
+                    </header>
+                    <section class="post-content">
+                        <a href="{{ site.baseurl }}{{ post.url }}" class="link_content">
+                            {{ post.excerpt | truncatewords:30 }}
+                            <span class="bottom_btns">
+                                <span class="txt_more">more <i class="fa fa-caret-right"></i></span>
+                            </span>
+                        </a>
+                    </section>
+                </article>
+            {% endfor %}
+            </li>
+        </ul>
+    </div>
+</div>

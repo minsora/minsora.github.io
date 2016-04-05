@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+@import url(common.css);
+@import url(subCommon.css);
+
+body {font:11px "돋움",Dotum; color:#848484;}
+span {color:#e77300; padding-right:4px;}
+
+form {width:97%; padding:12px; text-align:center;}
+input, select, textarea {border:1px solid #dadada;}
+input {font-size:11px;}
+select {color:#969696; font:11px "돋움",Dotum; height:18px; vertical-align:top;}
+
+label {vertical-align:middle;}
+	#id, #friendID {width:100px; height:15px;}
+	#pw,#pw2 {width:150px; height:15px;}
+	#pwQ {width:200px; height:15px;}
+	#pwQA {width:395px; height:15px;}
+	#name,#nickname {width:130px; height:15px;}
+	.wNum {width:35px; height:15px;}
+	.w100 {height:15px; width:100px;}
+	#yes, #no, #newspaper1, #newspaper2, #newspaper3, #mailing, #allSee {border:0;}
+	#address1, #address2 {width:550px; margin-top:1px; height:15px;}
+
+#select {position:relative; float:left; padding-right:5px;}
+#selectBox {background:url(../images/selectBox.gif) no-repeat right top; border:1px solid #e1dfdf; width:188px; height:14px;}
+		#selectList {position:absolute; left:0; top:17px; width:188px; border:1px solid #e1dfdf; background-color:#fff;}
+		#selectList li {width:188px; height:14px;}
+		#selectList li a {color:#a1a1a1; font:11px "굴림",Gulim;}
+		#selectList li a.a1 {padding:1px 110px 1px 2px;}
+		#selectList li a.a2 {padding:1px 110px 1px 2px;}
+		#selectList li a.a3 {padding:1px 21px 1px 2px;}
+		#selectList li a.a4 {padding:1px 58px 1px 2px;}
+		#selectList li a.a5 {padding:1px 95px 1px 2px;}
+		#selectList li a.a6 {padding:1px 73px 1px 2px;}
+		#selectList li a.a7 {padding:1px 142px 1px 2px;}
+		#selectList a:hover {color:white; background:blue;}
+
+textarea {width:540px; height:153px; padding-left:10px; font:11px "돋움",Dotum;}
+
+.submit {border:0; vertical-align:top; margin-top:15px;}
+
+table {width:750px; border-collapse:collapse; padding:15px 13px; margin:0 auto; text-align:left;}
+	caption {text-align:left; padding:15px 0 10px 10px;}
+	caption.ctit {padding-top:30px;}
+	th {width:125px; text-align:left; font-weight:normal; color:#444; padding:13px 10px; border-bottom:1px solid #e1dfdf;
+		background-color:#fafafa;}
+	table td {border-bottom:1px solid #e1dfdf; padding:8px 10px;}
+	td p {padding-top:5px;}
+
+	.first {border-top:2px solid #64b200;}
+	.btn {border:0; vertical-align:top;}

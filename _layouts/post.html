@@ -1,24 +1,22 @@
 ---
 layout: default
 ---
-<section>
-    <div class="container">
-        <header class="major">
-            <h2>{{ page.title }}</h2>
-                <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-        </header>
+<section class="cont_sub">
+    <header class="top_post">
+        <h3>{{ page.title }}</h3>
+        <span class="txt_date">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</span>
+    </header>
 
-        <section class="post-content">
-            {{ content }}
-        </section>
+    <section class="cont_post">
+        {{ content }}
+    </section>
 
-        <footer>
-            {% if page.previous %}
-            <a href="{{ page.previous.url }}" class="float-left">&larr; Previous post</a> {% endif %}
-            {% if page.next %}
-            <a href="{{ page.next.url }}" class="float-right">Next post &rarr;</a> {% endif %}
-        </footer>
+    <footer class="bottom_post">
+        {% if page.previous %}
+        <a href="{{ page.previous.url }}" class="float-left">&larr; Previous post</a> {% endif %}
+        {% if page.next %}
+        <a href="{{ page.next.url }}" class="float-right">Next post &rarr;</a> {% endif %}
+    </footer>
 
-    </div>
 
 </section>

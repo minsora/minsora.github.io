@@ -1,0 +1,48 @@
+h3 {
+    margin-right:20px;
+}
+.sub_profile, .sub_certify, .sub_skill, .sub_career, .sub_contact {
+        float:left;
+        width:50%;
+        min-height:300px;
+
+    dl {
+        padding:10px 10px 20px;
+        font-size:1rem;
+        color:#888;
+
+        dt {
+            float:left;
+            padding-bottom:20px;
+        }
+        dd {
+            display:block;
+            margin-left:130px;
+            padding-bottom:20px;
+
+            .txt_date {
+                display:block;
+                font-size:0.85rem;
+                color:#999;
+            }
+        }
+    }
+}
+
+@include respond-to(md, all) {
+    h3 {
+        margin-right:0;
+    }
+    .sub_profile, .sub_certify, .sub_skill, .sub_career, .sub_contact {
+        float:none;
+        width:100%;
+        min-height:inherit;
+    }
+}
+@include respond-to(sm, all) {
+    .sub_profile, .sub_certify, .sub_skill, .sub_career, .sub_contact {
+        dl {
+            padding-left:0;
+        }
+    }
+}

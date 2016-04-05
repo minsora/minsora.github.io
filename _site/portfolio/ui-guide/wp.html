@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>UI GUIDE</title>
+    <link rel="shortcut icon" href="img/favicon.ico?1">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="js/comm.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<h1 class="tit_logo">
+				<a href="index.html" class="link_logo">
+                    <img src="img/logo.png" width="259" alt="yellotravel UI GUIDE">
+                </a>
+			</h1>
+			<ul class="list_gnb">
+				<li><a href="index.html" class="link_gnb">HOME</a></li>
+				<li><!-- gnb_on 클래스로 아이콘, 하위메뉴 조절 -->
+					<a href="mailform_ui.html" class="link_gnb">MAIL FORM</a>
+					<ul class="list_lnb">
+						<li class="lnb_in"><!-- lnb_on 클래스로 아이콘, 하위메뉴 조절 -->
+							<a href="mailform_ui.html" class="link_lnb">디자인 규칙</a>
+							<ul class="list_snb">
+								<li><!-- snb_on 클래스로 아이콘 하위메뉴 조절 -->
+									<a href="mailform_ui.html#1" class="link_snb">완료 공유</a>
+								</li>
+								<li>
+									<a href="mailform_ui.html#2" class="link_snb">수정 요청</a>
+								</li>
+							</ul>
+						</li>
+						<li class="lnb_in">
+							<a href="mailform_markup.html" class="link_lnb">마크업 규칙</a>
+							<ul class="list_snb">
+								<li>
+									<a href="mailform_markup.html#1" class="link_snb">완료 공유</a>
+								</li>
+								<li>
+									<a href="mailform_markup.html#2" class="link_snb">수정 요청</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="yt.html" class="link_gnb">YT CORP</a>
+					<ul class="list_lnb">
+						<li class="lnb_in">
+							<a href="yt.html" class="link_lnb">파일 규칙</a>
+							<ul class="list_snb">
+								<li>
+									<a href="#none" class="link_snb">DESIGN</a>
+								</li>
+								<li>
+									<a href="#none" class="link_snb">MARK UP</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="yt_ui.html" class="link_lnb">디자인 규칙</a>
+						</li>
+						<li>
+							<a href="yt_markup.html" class="link_lnb">마크업 규칙</a>
+						</li>
+					</ul>
+				</li>
+				<li class="gnb_on">
+					<a href="wp.html" class="link_gnb">WOORIPENSION</a>
+					<ul class="list_lnb">
+						<li class="lnb_in lnb_on">
+							<a href="wp.html" class="link_lnb">파일 규칙</a>
+							<ul class="list_snb">
+								<li class="snb_on">
+									<a href="wp.html#1" class="link_snb">DESIGN</a>
+								</li>
+								<li>
+									<a href="wp.html#2" class="link_snb">MARK UP</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="wp_ui.html" class="link_lnb">디자인 규칙</a>
+						</li>
+						<li>
+							<a href="wp_markup.html" class="link_lnb">마크업 규칙</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="admin.html" class="link_gnb">ADMIN</a>
+					<ul class="list_lnb">
+						<li class="lnb_in">
+							<a href="admin.html" class="link_lnb">파일 규칙</a>
+							<ul class="list_snb">
+								<li>
+									<a href="admin.html#1" class="link_snb">DESIGN</a>
+								</li>
+								<li>
+									<a href="admin.html#2" class="link_snb">MARK UP</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="admin_ui.html" class="link_lnb">디자인 규칙</a>
+						</li>
+						<li>
+							<a href="admin_markup.html" class="link_lnb">마크업 규칙</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div><!-- //header -->
+		<div id="container">
+			<div class="cont">
+				<div class="top_info">
+                    <h4>파일 규칙</h4>
+					<div class="path_info">
+						<i class="fa fa-home"></i> &gt; wooripension &gt; 파일 규칙
+					</div>
+					<div class="txt_editor">2015.08.26. &nbsp;담당자 : 민소라</div>
+                </div>
+                <div id="1" class="desc_info">
+                    <h5>DESIGN</h5>
+                    <p>
+                        기존 파일은 유지하고 새로 파일을 생성해 해당 파일 이름 뒤에 아래의 파일명 규칙을 참고하여 관리한다.
+                    </p>
+                </div>
+                <div class="detail_info">
+                    <h6>파일명</h6>
+                    <div class="info_detail">
+                        일반적으로 파일명은 <em>메뉴명+날짜(전달일)</em>로 파일명을 구성한다.<br>
+                        ex) service_20150801.psd<br>
+                        <br>
+                        파일 전달일에 파일 수정이나 업데이트가 생길 시, 아래와 같이 <em>v(version)+숫자</em>로 구성한다.<br>
+                        ex) service_20150801_v.1.psd<br>
+                        <br>
+                        파일 전달일이 아닌 다른 날짜의 경우에는 해당 날짜로 변경해 재전달하고 버전은 초기화한다.
+                    </div>
+                </div>
+                <div class="detail_info">
+                    <h6>폴더 관리</h6>
+                    <div class="info_detail">
+                        폴더 분류는 다음의 규칙을 따른다. <br>
+                        디자인 폴더 정리는 기확안과 같은 경로로 정리하며, <em>작업 파일(psd)</em>과 <em>미리보기 파일(jpg)</em>을 같은 폴더에 정리한다. <br>
+                        미리보기 파일(jpg)의 경우에는 전체적인 레이아웃이나 디자인 변경이 많은 경우에만 업데이트한다. <br>
+                        <strong class="tit_dic"><i class="fa fa-folder-open-o"></i> wooripension</strong>
+                        <ul class="list_dic">
+                            <li>
+                                <em class="tit_dic"><i class="fa fa-folder-open-o"></i> menu name</em>
+                                <ul class="list_dic">
+                                    <li><i class="fa fa-file-image-o"></i> 01_service_20150801.psd</li>
+                                    <li><i class="fa fa-file-image-o"></i> 01_service_20150801.jpg</li>
+                                    <li><i class="fa fa-file-image-o"></i> 01_service_20150801_v.1.psd</li>
+                                    <li><i class="fa fa-file-image-o"></i> 01_service_20150801_v.1.jpg</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <em class="tit_dic"><i class="fa fa-folder-open-o"></i> menu name</em>
+                                <ul class="list_dic">
+                                    <li><i class="fa fa-file-image-o"></i> 01_service_20150801.psd</li>
+                                    <li><i class="fa fa-file-image-o"></i> 01_service_20150801.jpg</li>
+                                    <li><i class="fa fa-file-image-o"></i> 01_service_20150802.psd</li>
+                                    <li><i class="fa fa-file-image-o"></i> 01_service_20150802.jpg</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <em class="tit_dic"><i class="fa fa-file-image-o"></i> wp_guide01.psd <span class="txt_dic">: 공통 가이드 템플릿</span></em>
+                            </li>
+                            <li>
+                                <em class="tit_dic"><i class="fa fa-file-image-o"></i> wp_guide02.psd <span class="txt_dic">: 공통 가이드 템플릿</span></em>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="detail_info">
+                    <h6>psd 구성</h6>
+                    <div class="info_detail">
+                        현재 운영되고 있는 우리펜션의 레이아웃을 유지하며, 레이아웃이나 공통 디자인이 변경될 경우 해당 파일을 요청하여 수정하도록 한다.<br>
+                        아래에 제공되고 있는 파일을 기본으로 작업한다.
+                        <br><br><br>
+                        <i class="fa fa-angle-right"></i> 기본 레이아웃 :&nbsp;
+                        <a href="http://smb.yt.com/project/wooripension/templete/wp_guide01.psd" class="link_down">
+                            <i class="fa fa-download"></i>wp_guide01.psd
+                        </a>
+                        <br><br>
+                        <i class="fa fa-angle-right"></i> side가 있는 레이아웃 :&nbsp;
+                        <a href="http://smb.yt.com/project/wooripension/templete/wp_guide02.psd" class="link_down">
+                            <i class="fa fa-download"></i>wp_guide02.psd
+                        </a>
+                        <br><br><br>
+                        <b>psd 파일의 구성</b>은 큰 단락으로 header / container / footer로 나눠져 있다.<br>
+                        header와 footer는 특별한 경우 외에는 변경하지 않으며, 신규 페이지 작업은 <em>container 영역 안에서만 작업</em>한다.
+                        <table class="tbl_brd">
+                            <tr>
+                                <th style="width:100px">header</th>
+                                <td colspan="2">
+                                    <img src="img/wp/wp_guide_header.jpg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th rowspan="3">container</th>
+                                <td style="width:60px">top</td>
+                                <td>
+                                    <img src="img/wp/wp_guide_container1.jpg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>cont</td>
+                                <td>
+                                    <img src="img/wp/wp_guide_container2.jpg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>side</td>
+                                <td>
+                                    <img src="img/wp/wp_guide_container3.jpg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>footer</th>
+                                <td colspan="2">
+                                    <img src="img/wp/wp_guide_footer.jpg" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                        <br><br><br>
+                        sub page는 <em>기본 타입(type1)</em>과 <em>side가 있는 타입(type2)</em>으로 총 2가지 타입으로 되어있으며, 아래의 표를 참고하여 작업한다. <br>
+                        side와 top 영역은 기본 틀을 사용하고 텍스트 수정만 가능하며, 콘텐츠 작업은 cont 영역(work space *)에서 작업한다.
+                        <br><br>
+                        <strong>type1(기본 타입)</strong>
+                        <table class="tbl_brd">
+                            <tr>
+                                <td rowspan="2">
+                                    <img src="img/wp/wp_guide01.jpg" alt="">
+                                </td>
+                                <td>
+                                    <span class="txt_type">
+                                        <i class="fa fa-folder-open-o"></i> guide <br>
+                                        <i class="fa fa-folder-open-o"></i> header <br>
+                                        <i class="fa fa-folder-open-o"></i> container <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-folder-open-o"></i> top<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-folder-open-o"></i> cont<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><i class="fa fa-file-image-o"></i> work space *</b> <br>
+                                        <i class="fa fa-folder-open-o"></i> footer
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="img/wp/wp_guide01_ps.jpg" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                        <br><br>
+                        <strong>type2(side가 있는 타입)</strong>
+                        <table class="tbl_brd">
+                            <tr>
+                                <td rowspan="2">
+                                    <img src="img/wp/wp_guide02.jpg" alt="">
+                                </td>
+                                <td>
+                                    <span class="txt_type">
+                                        <i class="fa fa-folder-open-o"></i> guide <br>
+                                        <i class="fa fa-folder-open-o"></i> header <br>
+                                        <i class="fa fa-folder-open-o"></i> container <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-folder-open-o"></i> side<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-folder-open-o"></i> top<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-folder-open-o"></i> cont<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><i class="fa fa-file-image-o"></i> work space *</b> <br>
+                                        <i class="fa fa-folder-open-o"></i> footer
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="img/wp/wp_guide02_ps.jpg" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                        <br><br><br>
+                        <strong>레이어 폴더 설명</strong>
+                        <br><br><br>
+                        <div class="box_explan">
+                            <strong class="tit_explan"><i class="fa fa-folder-o"></i> guide</strong>
+                            <div class="txt_explan">
+                                <span class="emph_explan">가이드 영역</span>
+                                <br>
+                                작업된 영역 또는 부분 수정된 부분을 다음 작업자가 알아보기 쉽게 표시를 해주기 위한 레이어 폴더이다.<br>
+                                작업한 영역을 박스로 표시하고 레이어 파일 이름에 번호와 작업 부분에 대한 설명을 기입한다.
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="box_explan">
+                            <strong class="tit_explan"><i class="fa fa-folder-o"></i> header</strong>
+                            <div class="txt_explan">
+                                <span class="emph_explan">상단 영역</span>
+                                <br>
+                                기본 틀을 유지하고 특별한 경우를 제외하고 변경하지 않는 것을 원칙으로 한다.
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="box_explan">
+                            <strong class="tit_explan"><i class="fa fa-folder-o"></i> container</strong>
+                            <div class="txt_explan">
+                                <span class="emph_explan">본문 영역</span>
+                                <br>
+                                top과 lnb는 기본 틀을 유지하고 텍스트 변경 위주로만 작업하며, cont 폴더 내에서 해당 콘텐츠 작업을 진행한다.
+                            </div>
+                            <br><br>
+                            <div class="box_explan">
+                                <strong class="tit_explan"><i class="fa fa-folder-o"></i> side</strong>
+                                <div class="txt_explan">
+                                    <span class="emph_explan">사이드 영역</span>
+                                    <br>
+                                    lnb 메뉴(서브 메뉴)와 고객센터 등을 포함하고 있는 영역이며, <br>
+                                    사이드 영역은 필수 영역은 아니며 필요에 따라 사용 유무를 결정하면 된다.
+                                </div>
+                            </div>
+                            <br>
+                            <div class="box_explan">
+                                <strong class="tit_explan"><i class="fa fa-folder-o"></i> top</strong>
+                                <div class="txt_explan">
+                                    <span class="emph_explan">타이틀 영역</span>
+                                    <br>
+                                    해당 페이지의 타이틀과 페이지 경로에 맞게 텍스트를 변경한다.
+                                </div>
+                            </div>
+                            <br>
+                            <div class="box_explan">
+                                <strong class="tit_explan"><i class="fa fa-folder-o"></i> cont</strong>
+                                <div class="txt_explan">
+                                    <span class="emph_explan">콘텐츠 영역(내용 영역)</span>
+                                    <br>
+                                    페이지에 대한 디자인과 텍스트를 직접적으로 작업하는 영역이며, <br>
+                                    디자인은 해당 영역에 맞게 폴더로 작업하고 작업 완료 후 불필요한 파일과 폴더는 삭제하여 정리한다.
+                                </div>
+                            </div>
+                        </div>
+                        <div id="markup"></div>
+                        <br><br>
+                        <div class="box_explan">
+                            <strong class="tit_explan"><i class="fa fa-folder-o"></i> footer</strong>
+                            <div class="txt_explan">
+                                <span class="emph_explan">하단 영역</span>
+                                <br>
+                                기본 틀을 유지하고 특별한 경우를 제외하고 변경하지 않는 것을 원칙으로 한다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="2" class="desc_info">
+                    <h5>MARK UP</h5>
+                    <p>
+                        HTML 파일은 html 폴더와 wooripension 폴더에서 관리하며, css와 image 파일은 cdn.wooripension 폴더에서 공용으로 관리한다.
+                    </p>
+                </div>
+                <div class="detail_info">
+                    <h6>파일명</h6>
+                    <div class="info_detail">
+                        <strong>HTML 작업시</strong>
+                        <br><br><br>
+                        <div class="box_explan">
+                            <strong class="tit_explan"><i class="fa fa-folder-o"></i> html</strong>
+                            <div class="txt_explan">
+                                <span class="emph_explan">마크업 작업 영역</span>
+                                <br>
+                                파일명은 디자인 파일과의 작업 확인을 편리하게 하기 위해, <em>디자인 파일명과 동일</em>하게 하는 것을 원칙으로 한다.<br>
+                                디자인 파일명의 규칙은 아래와 같다.<br>
+                                <br>
+                                <em>메뉴명+날짜(디자인 파일명의 날짜와 동일)</em>로 파일명을 구성한다.<br>
+                                ex) service_20150801.html<br>
+                                <br>
+                                파일 전달일에 파일 수정이나 업데이트가 생길 시, 아래와 같이 <em>v(version)+숫자</em>로 구성한다.<br>
+                                ex) service_20150801_v.1.html<br>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="box_explan">
+                            <strong class="tit_explan"><i class="fa fa-folder-o"></i> wooripension</strong>
+                            <div class="txt_explan">
+                                <span class="emph_explan">개발 작업 영역</span>
+                                <br>
+                                특별한 경우를 제외하고 개발 작업 영역(wooripension 폴더)의 파일명을 변경하거나 파일을 이동하지 않는다. <br>
+                                작업 되어 있는 파일 구조에서 작업하고 불가피하게 파일 구조를 바꿔야하는 경우에는 <br>
+                                프론트 엔드 개발 담당자와 상의 후 변경 요청을 한다. <br>
+                                <br>
+
+                            </div>
+                        </div>
+                        <br><br><br>
+                        <strong>CDN 작업시</strong> : cdn.wooripension
+                        <br><br><br>
+                        <div class="box_explan">
+                            <strong class="tit_explan"><i class="fa fa-folder-o"></i> css</strong>
+                            <div class="txt_explan">
+                                <span class="emph_explan">CSS 작업 영역</span>
+                                <br>
+                                파일 상단에 <em>메뉴명+날짜(디자인 파일명의 날짜와 동일)</em>을 기입해 해당 파일의 업데이트를 주석처리 한다. <br>
+                                주석은 디자인 사안의 버전과 맞춰 작업하는 것을 원칙으로 한다.
+                                <br><br>
+                                <code class="box_code">
+                                    /* 20150801_v.1 */
+                                </code>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="box_explan">
+                            <strong class="tit_explan"><i class="fa fa-folder-o"></i> img</strong>
+                            <div class="txt_explan">
+                                <span class="emph_explan">이미지 파일 영역</span>
+                                <br>
+                                우리펜션 이미지는 이미지 스프라이트 방식을 사용하지 않고 <em>이미지를 개별적으로 저장</em>하여 사용한다. <br>
+                                이미지 폴더는 각각 메뉴명에 맞게 폴더로 나누어 분류되어 있으며, 공통요소는 common 폴더에 추가하고<br>
+                                각 메뉴와 페이지에 맞게 해당 폴더를 추가하거나 기존 폴더에 이미지를 추가하여 작업한다. <br>
+                                이 전에 사용된 비슷한 이미지가 있을 시 담당 디자이너와 상의 후 사용한다.
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="box_explan">
+                            <strong class="tit_explan"><i class="fa fa-folder-o"></i> js</strong>
+                            <div class="txt_explan">
+                                <span class="emph_explan">스크립트 파일 영역</span>
+                                <br>
+                                작업을 하면서 사용되거나 추가할 <em>플러그인을 plugin 폴더에 원본을 변경하지 않고 추가</em>한다. <br>
+                                플러그인에 사용된 css를 변경하고자 할 경우에는 style.css 파일의 하단에 오버라이딩해서 사용하는 것을 원칙으로 한다. <br>
+                                <em>직접 작업한 스크립트나 플러그인 실행문의 경우</em>에는 따로 파일을 만들지 않고, 해당 작업된 파일의 하단에 넣고 <br>
+                                날짜(작업일)와 스크립트에 대한 간략한 설명을 덧붙여 주석처리 한다.
+                                <br><br>
+                                <code class="box_code">
+                                    &lt;!-- 2015-08-01 selectric plugin 실행문 --&gt; <br>
+                                    &lt;script&gt; <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;$(function() { <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$('.cover_select select').selectric(); <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;}); <br>
+                                    &lt;/script&gt;
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div><!--// cont -->
+            <a href="#" class="btn_top"><img src="img/top.jpg" width="46" height="46" alt="위로"></a>
+		</div>
+		<div id="footer">
+			Copyright © yt Corp All Rights Reserved
+		</div>	
+	</div>
+</body>
+</html>

@@ -1,104 +1,395 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title></title>
-  <meta name="description" content="">
+    <title>MinSora</title>
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
 
-  <!--[if lte IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+    <!--[if lte IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
 
-  <link rel="shortcut icon" href="/images/favicon_m.ico?v=2" type="image/x-icon">
-  <link rel="icon" href="/images/favicon_m.ico?v=2" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon_m.ico?v=2" type="image/x-icon">
+    <link rel="icon" href="/images/favicon_m.ico?v=2" type="image/x-icon">
 
-  <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css" />
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
 
-  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 
-  <script src="/js/sideBtn.js"></script>
+    <script src="/js/sideBtn.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var pathname = window.location.pathname,
+                $list = $(".list_gnb a");
+
+            $list.each(function(index) {
+                if (pathname.toUpperCase().indexOf($(this).text().toUpperCase()) != -1){
+                    $(this).parent().addClass('on').parent().siblings().removeClass('on');
+                }
+            });
+        });
+    </script>
 </head>
 
 
-  <body>
+    <body>
 
-    <div id="wrapper">
-      <header id="header">
-  <h1 class="logo">
-    <a class="link_profile" href="/">
-      <img src="/images/profile.jpg" alt="">
-    </a>
-    <a class="link_logo" href="/"></a>
-  </h1>
-  <strong class="txt_profile">I'm a UI Developer and Designer.</strong>
-  <nav id="nav">
-    <h2>메뉴</h2>
-    <ul class="list_gnb">
-      <li class="on"><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/project">Project</a></li>
+        <div id="wrapper">
+            <header id="header">
+    <h1 class="logo">
+        <a class="link_profile" href="/">
+            <img src="/images/sr.png" alt="">
+        </a>
+        <a class="link_logo" href="/">MinSora</a>
+    </h1>
+    <strong class="txt_profile">I'm a UI Developer and Designer.</strong>
+    <nav id="nav">
+        <h2>메뉴</h2>
+        <ul class="list_gnb">
+            <li>
+                <a href="/about">About</a>
+            </li>
+            <li>
+                <a href="/project">Project</a>
+            </li>
+            <li>
+                <a href="/portfolio">Portfolio</a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="list_sns">
+        <li><a href="https://www.facebook.com/ssola129" class="link_sns" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/ssola129/" class="link_sns" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://github.com/ssola129" class="link_sns" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+        <li><a href="mailto:ssola129@naver.com" class="link_sns"><i class="fa fa-envelope"></i></a></li>
     </ul>
-  </nav>
-  <ul class="list_sns">
-    <li><a href="#" class="link_sns"><i class="fa fa-facebook"></i></a></li>
-    <li><a href="#" class="link_sns"><i class="fa fa-instagram"></i></a></li>
-    <li><a href="#" class="link_sns"><i class="fa fa-github-alt"></i></a></li>
-    <li><a href="#" class="link_sns"><i class="fa fa-envelope"></i></a></li>
-  </ul>
 </header>
 
-      <section id="container">
-        <div class="cont_top">
-  <h2>
-    <a class="link_logo" href="/">
-      <img src="/images/profile.jpg" alt="">
-      
-    </a>
-  </h2>
-  <a href="javascript:;" class="btn_nav"><span class="ico_nav">메뉴 열기/닫기</span></a>
+            <section id="container">
+                <div class="cont_top">
+    <h2>
+        <a class="link_logo" href="/">
+            <img src="/images/profile.jpg" alt="">
+            MinSora
+        </a>
+    </h2>
+    <a href="javascript:;" class="btn_nav"><span class="ico_nav">메뉴 열기/닫기</span></a>
 </div>
-        <section id="one" >
-    <div class="container">
-        
-            <article>
-                <header>
-                    <h2><a href="/jekyll/update/2016/01/18/welcome-to-jekyll.html">Welcome to Jekyll!</a></h2>
-                </header>
-                <section class="post-content">
-                    <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-
-                </section>
-                <section class="special">
-                    <ul class="actions">
-                        <li><a href="/jekyll/update/2016/01/18/welcome-to-jekyll.html" class="button special">Read More</a></li>
-                    </ul>
-                </section>
-            </article>
-        
+                <section class="cont_sub">
+    <h2>Project</h2>
+    <div class="sub_project">
+        <h3>2016</h3>
+        <!-- <h4>2016</h4> -->
+        <ul class="list_project">
+            <li>
+                <span class="img_project"><img src="../images/pc_jeju.jpg" width="200" height="140" alt=""></span>
+                <span class="info_project">
+                    <strong class="tit_project">
+                        제주닷컴 리뉴얼 PC
+                        <span class="btn_project" target="_blank">View <i class="fa fa-caret-right"></i></span>
+                    </strong>
+                    <span class="txt_project">
+                        옐로트래블의 소속회사인 제주닷컴의 리뉴얼 사이트입니다. 회사 내부 사정으로 인해 작업 중간에 홀딩된 상태입니다.
+                    </span>
+                    <dl class="list_info">
+                        <dt>- 기간 :</dt>
+                        <dd>2016년 2월~</dd>
+                        <dt>- 역할 :</dt>
+                        <dd>Markup/Web standards</dd>
+                        <dt>- 성과 :</dt>
+                        <dd>옐로트래블의 소속회사와 두번째로 진행하게 된 프로젝트입니다. <br>
+                        규모가 큰 프로젝트여서 기획과 디자인 그리고 퍼블리싱 작업을 신중하게 진행하였지만, 내부 사정으로 인해 홀딩된 상태여서 안타까운 마음이 드는 프로젝트입니다.</dd>
+                    </dl>
+                </span>
+            </li>
+            <li>
+                <span class="img_project"><img src="../images/m_memorize.jpg" width="200" height="140" alt=""></span>
+                <span class="info_project">
+                    <strong class="tit_project">
+                        메모라이즈 M
+                        <a href="http://m.hallplain.com/" class="btn_project" target="_blank">View <i class="fa fa-caret-right"></i></a>
+                    </strong>
+                    <span class="txt_project">
+                        웹소설인 '메모라이즈'의 작품을 기반으로 만든 비주얼 노벨 사이트입니다.
+                    </span>
+                    <dl class="list_info">
+                        <dt>- 기간 :</dt>
+                        <dd>2016년 1월(3주간)</dd>
+                        <dt>- 역할 :</dt>
+                        <dd>Markup/Web standards</dd>
+                        <dt>- 성과 :</dt>
+                        <dd>이전 진행했던 pc를 고려해 작업하였고, 작업을 하면서 저 스스로 좀 더 수월하게 작업되는 것을 느끼면서 많이 성장한 것을 느꼈습니다.</dd>
+                    </dl>
+                </span>
+            </li>
+        </ul>
+        <h3>2015</h3>
+        <ul class="list_project">
+            <li>
+                <span class="img_project"><img src="../images/m_wp.jpg" width="200" height="140" alt=""></span>
+                <span class="info_project">
+                    <strong class="tit_project">
+                        우리펜션 부분 개편 M
+                        <span class="btn_project" target="_blank">View <i class="fa fa-caret-right"></i></span>
+                    </strong>
+                    <span class="txt_project">
+                        옐로트래블의 소속회사인 우리펜션의 모바일 웹 부분 개편을 진행하였습니다. 현재 서비스 미오픈 상태입니다.
+                    </span>
+                    <dl class="list_info">
+                        <dt>- 기간 :</dt>
+                        <dd>2015년 12월(3주간)</dd>
+                        <dt>- 역할 :</dt>
+                        <dd>Markup/Web standards/Responsive</dd>
+                        <dt>- 성과 :</dt>
+                        <dd>옐로트래블의 소속 회사에 파견을 나가 진행했던 프로젝트입니다. 소속팀이 아닌 다른 회사의 사람들과 커뮤니케이션하며 작업하게 되어 새로운 경험이었습니다.</dd>
+                    </dl>
+                </span>
+            </li>
+            <li>
+                <span class="img_project"><img src="../images/pc_memorize.jpg" width="200" height="140" alt=""></span>
+                <span class="info_project">
+                    <strong class="tit_project">
+                        메모라이즈 PC
+                        <a href="http://www.hallplain.com/" class="btn_project" target="_blank">View <i class="fa fa-caret-right"></i></a>
+                    </strong>
+                    <span class="txt_project">
+                        웹소설인 '메모라이즈'의 작품을 기반으로 만든 비주얼 노벨 사이트입니다.
+                    </span>
+                    <dl class="list_info">
+                        <dt>- 기간 :</dt>
+                        <dd>2015년 11월(1달간)</dd>
+                        <dt>- 역할 :</dt>
+                        <dd>Markup/Web standards/jquery</dd>
+                        <dt>- 성과 :</dt>
+                        <dd>화려한 그래픽의 사이트를 작업하면서 심플한 디자인과 다른 인터렉션 부분들을 많이 고려하여 작업하였습니다.</dd>
+                    </dl>
+                </span>
+            </li>
+            <li>
+                <span class="img_project"><img src="../images/m_drtravel.jpg" width="200" height="140" alt=""></span>
+                <span class="info_project">
+                    <strong class="tit_project">
+                        dr.Travel
+                        <a href="/portfolio/dr.travel/login.html" class="btn_project" target="_blank">View <i class="fa fa-caret-right"></i></a>
+                    </strong>
+                    <span class="txt_project">
+                        여행 QnA 커뮤니티 하이브리드 앱으로 진행하던 프로젝트입니다. 회사 내부 사정으로 인해 작업 중간에 홀딩되어 오픈이 되지 못했습니다.
+                    </span>
+                    <dl class="list_info">
+                        <dt>- 기간 :</dt>
+                        <dd>2015년 9월(3주간)</dd>
+                        <dt>- 역할 :</dt>
+                        <dd>Markup/Web standards/Responsive/Gulp/Sass</dd>
+                        <dt>- 성과 :</dt>
+                        <dd>디자이너와 개발자 한분씩과 저 이렇게 셋이 작업했던 프로젝트였습니다. 재밌게 작업하였으나 내부사정으로 인해 홀딩된 것이 안타까웠던 프로젝트였습니다.</dd>
+                    </dl>
+                </span>
+            </li>
+            <li>
+                <span class="img_project"><img src="../images/pc_uiguide.jpg" width="200" height="140" alt=""></span>
+                <span class="info_project">
+                    <strong class="tit_project">
+                        UI Guide
+                        <a href="/portfolio/ui-guide/index.html" class="btn_project" target="_blank">View <i class="fa fa-caret-right"></i></a>
+                    </strong>
+                    <span class="txt_project">
+                        제가 메인으로 필요로 의해 만든 UI GUIDE 사이트입니다. 회사 내부에서 디자이너들과 UI관련 내용을 공유하기 위해 제작하였습니다.
+                    </span>
+                    <dl class="list_info">
+                        <dt>- 기간 :</dt>
+                        <dd>2015년 8월~9월(1달간)</dd>
+                        <dt>- 역할 :</dt>
+                        <dd>Planning/Markup/Guide Contents/Gulp/Sass</dd>
+                        <dt>- 성과 :</dt>
+                        <dd>업무가 아닌 스스로 내부에 필요할 것 같아 만든 사이트여서 부담없이 더 즐겁게 작업할 수 있었습니다.</dd>
+                    </dl>
+                </span>
+            </li>
+            <li>
+                <span class="img_project"><img src="../images/vorapottery.jpg" width="200" height="140" alt=""></span>
+                <span class="info_project">
+                    <strong class="tit_project">
+                        Vorapottery
+                        <a href="http://www.vorapottery.com/" class="btn_project" target="_blank">View <i class="fa fa-caret-right"></i></a>
+                    </strong>
+                    <span class="txt_project">
+                        언니가 하는 공방의 홍보 사이트입니다.
+                    </span>
+                    <dl class="list_info">
+                        <dt>- 기간 :</dt>
+                        <dd>2015년 7월(2주간)</dd>
+                        <dt>- 역할 :</dt>
+                        <dd>Planning/Design/Markup/Jquery/Plugin</dd>
+                        <dt>- 성과 :</dt>
+                        <dd>공방을 운영하는 언니에게 도움이 되고자, 기획/디자인/도메인/호스팅 등 담당 업무가 아닌 외적인 부분까지 고려하면서 작업하였습니다.</dd>
+                    </dl>
+                </span>
+            </li>
+            <li>
+                <span class="img_project"><img src="../images/admin.jpg" width="200" height="140" alt=""></span>
+                <span class="info_project">
+                    <strong class="tit_project">
+                        Admin 내부 관리툴
+                        <a href="http://www.vorapottery.com/admin/index.php" class="btn_project" target="_blank">View <i class="fa fa-caret-right"></i></a>
+                    </strong>
+                    <span class="txt_project">
+                        회사 Admin 내부 관리툴로 진행하던 프로젝트입니다. 내부사정으로 인해 홀딩되었습니다.
+                    </span>
+                    <dl class="list_info">
+                        <dt>- 기간 :</dt>
+                        <dd>2015년 4월~7월</dd>
+                        <dt>- 역할 :</dt>
+                        <dd>Markup/Jquery/Plugin/php</dd>
+                        <dt>- 성과 :</dt>
+                        <dd>현재 연결된 링크는 프로젝트가 내부 사정으로 인해 진행이 더디게 되면서, php/jquery/plugin을 공부하면서 재작업해본 사이트입니다.</dd>
+                    </dl>
+                </span>
+            </li>
+            <li>
+                <span class="img_project"><img src="../images/yellotravel.jpg" width="200" height="140" alt=""></span>
+                <span class="info_project">
+                    <strong class="tit_project">
+                        옐로트래블 사이트
+                        <a href="http://yellotravel.com/" class="btn_project" target="_blank">View <i class="fa fa-caret-right"></i></a>
+                    </strong>
+                    <span class="txt_project">
+                        옐로트래블의 회사 소개 사이트입니다.
+                    </span>
+                    <dl class="list_info">
+                        <dt>- 기간 :</dt>
+                        <dd>2015년 3월(3주간)</dd>
+                        <dt>- 역할 :</dt>
+                        <dd>Markup/Web standards/Responsive/Plugin/Jquery</dd>
+                        <dt>- 성과 :</dt>
+                        <dd>그동안은 마크업 위주의 작업만 진행하다가 이직 후 새로운 환경에서 새로운 방식, 새로운 사람들과 진행하게 되면서 시행착오와 적응기간이 필요했지만 작업 완료 후 뿌듯함이 컸던 프로젝트 입니다.</dd>
+                    </dl>
+                </span>
+            </li>
+        </ul>
+        <h3>2014</h3>
+        <ul class="list_project">
+            <li>
+                <span class="img_project"><img src="../images/m_cafe.jpg" width="200" height="140" alt=""></span>
+                <span class="info_project">
+                    <strong class="tit_project">
+                        다음 카페 모바일 웹
+                        <a href="http://m.cafe.daum.net/" class="btn_project" target="_blank">View <i class="fa fa-caret-right"></i></a>
+                    </strong>
+                    <span class="txt_project">
+                        그 해 Daum에서 모바일에서 제일 큰 프로젝트 중 하나인 카페 모바일 웹 리뉴얼입니다.
+                    </span>
+                    <dl class="list_info">
+                        <dt>- 기간 :</dt>
+                        <dd>2014년 7월~9월(3달간)</dd>
+                        <dt>- 역할 :</dt>
+                        <dd>Markup/Web standards</dd>
+                        <dt>- 성과 :</dt>
+                        <dd>마크업 담당자로 모바일웹의 마크업과 웹표준 그리고 접근성에 맡게 고려하여 작업하였고, 다음의 대표 서비스 중 하나인 카페를 작업한다는 것에 대해 큰 자부심을 느꼈습니다.</dd>
+                    </dl>
+                </span>
+            </li>
+            <li>
+                <span class="img_project"><img src="../images/darum.jpg" width="200" height="140" alt=""></span>
+                <span class="info_project">
+                    <strong class="tit_project">
+                        Darum(다룸)
+                        <a href="http://darum.daum.net/" class="btn_project" target="_blank">View <i class="fa fa-caret-right"></i></a>
+                    </strong>
+                    <span class="txt_project">
+                        Daum의 웹표준 기술을 외부인들과 공유하고자, 팀내에서 진행한 웹표준 가이드 사이트입니다.
+                    </span>
+                    <dl class="list_info">
+                        <dt>- 기간 :</dt>
+                        <dd>2014년 4월~5월</dd>
+                        <dt>- 역할 :</dt>
+                        <dd>Markup support/Guide Contents</dd>
+                        <dt>- 성과 :</dt>
+                        <dd>프로젝트의 서포트로 참여하여, 소속 팀원들과 함께 정보를 취합하고 정리하였습니다. </dd>
+                    </dl>
+                </span>
+            </li>
+            <li>
+                <span class="img_project"><img src="../images/m_nowsong.jpg" width="200" height="140" alt=""></span>
+                <span class="info_project">
+                    <strong class="tit_project">
+                        방금그곡 M
+                        <a href="http://m.music.daum.net/onair/timeline" class="btn_project" target="_blank">View <i class="fa fa-caret-right"></i></a>
+                    </strong>
+                    <span class="txt_project">
+                        다음 뮤직 내에 런칭된 서비스로써, 실시간으로 방송에서 나오는 곡들을 알려줍입니다.
+                    </span>
+                    <dl class="list_info">
+                        <dt>- 기간 :</dt>
+                        <dd>2014년 3월(1달간)</dd>
+                        <dt>- 역할 :</dt>
+                        <dd>Markup/Web standards</dd>
+                        <dt>- 성과 :</dt>
+                        <dd>마크업 담당자로 웹표준과 접근성을 고려하여 처음부터 혼자 진행하여 pc와 mobile 오픈까지 작업하였습니다.</dd>
+                    </dl>
+                </span>
+            </li>
+            <li>
+                <span class="img_project"><img src="../images/pc_nowsong.jpg" width="200" height="140" alt=""></span>
+                <span class="info_project">
+                    <strong class="tit_project">
+                        방금그곡 PC
+                        <a href="http://music.daum.net/onair/timeline" class="btn_project" target="_blank">View <i class="fa fa-caret-right"></i></a>
+                    </strong>
+                    <span class="txt_project">
+                        다음 뮤직 내에 런칭된 서비스로써, 실시간으로 방송에서 나오는 곡들을 알려줍입니다.
+                    </span>
+                    <dl class="list_info">
+                        <dt>- 기간 :</dt>
+                        <dd>2014년 2월(1달간)</dd>
+                        <dt>- 역할 :</dt>
+                        <dd>Markup/Web standards</dd>
+                        <dt>- 성과 :</dt>
+                        <dd>마크업 담당자로 웹표준과 접근성을 고려하여 처음부터 혼자 진행하여 pc와 mobile 오픈까지 작업하였습니다.</dd>
+                    </dl>
+                </span>
+            </li>
+        </ul>
+        <h3>2013</h3>
+        <ul class="list_project">
+            <li>
+                <span class="img_project"><img src="../images/storyball.jpg" width="200" height="140" alt=""></span>
+                <span class="info_project">
+                    <strong class="tit_project">
+                        스토리볼
+                        <a href="http://storyball.daum.net/" class="btn_project" target="_blank">View <i class="fa fa-caret-right"></i></a>
+                    </strong>
+                    <span class="txt_project">
+                        다음에서 서비스하고 있는 모바일 콘텐츠입니다.
+                    </span>
+                    <dl class="list_info">
+                        <dt>- 기간 :</dt>
+                        <dd>2013년 6월~8월(2개월간-1차 오픈), 2013년 12월~2014년 1월(2개월간-개편), 이직 전까지 서비스 담당</dd>
+                        <dt>- 역할 :</dt>
+                        <dd>Markup/Web standards 1차 오픈(서브), 개편(메인), 서비스 담당자</dd>
+                        <dt>- 성과 :</dt>
+                        <dd>2013년 다음에서 가장 이슈된 프로젝트로 추후 유지보수와 개편을 메인으로 담당하여 개편 진행, 스토리볼 담당자로 이후 유지보수 진행하였습니다.</dd>
+                    </dl>
+                </span>
+            </li>
+        </ul>
     </div>
 </section>
-<section>
-    <div class="container">
-        <div class="features">
-        
-        </div>
-    </div>
-</section>
-      </section>
-      <footer id="footer">
-  <div class="txt_copyright">&copy; minsora. All rights reserved.</div>
+            </section>
+            <footer id="footer">
+    <div class="txt_copyright">&copy; minsora 2016. All rights reserved.</div>
 </footer>
 
-      <div class="dimmed" style="display:none;"></div>
-    </div>
+            <div class="dimmed" style="display:none;"></div>
+        </div>
 
-  </body>
+    </body>
 
 </html>

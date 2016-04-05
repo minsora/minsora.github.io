@@ -1,0 +1,100 @@
+.list_post {
+    overflow:hidden;
+
+    li {
+        float:left;
+        width:50%;
+        padding-right:10px;
+        @include prefix(box-sizing, border-box);
+
+        &:nth-child(2n){
+            padding-left:10px;
+        }
+
+        .group_post {
+            overflow:hidden;
+            height:160px;
+            @include prefix(box-sizing, border-box);
+
+            header {
+                overflow:hidden;
+                margin-bottom:10px;
+                padding:0 5px;
+                @include prefix(box-sizing, border-box);
+                border-bottom:1px solid #34495E;
+
+                .tit_post {
+                    float:left;
+                    padding-bottom:10px;
+                    font-size:1.1rem;
+                    color:#333;
+                }
+                .txt_date {
+                    float:right;
+                    position:relative;
+                    top:12px;
+                    font-size:0.7rem;
+                }
+            }
+            .post-content {
+                padding:0 5px;
+                font-size:0.85rem;
+                line-height:1.4rem;
+                color:#808080;
+
+                .link_content {
+                    display:block;
+                    text-decoration:none;
+
+                    ul {
+                        overflow:hidden;
+
+                        li {
+                            float:none;
+                            width:100%;
+                            padding:0;
+                        }
+                    }
+                    .bottom_btns {
+                        display:block;
+                        padding:0 5px;
+                        text-align:right;
+
+                        .txt_more {
+                            font-size:0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.top_post {
+    position:relative;
+
+    h3 {
+        margin-right:0;
+    }
+
+    .txt_date {
+        position:absolute;
+        right:5px;
+        bottom:5px;
+        font-size:0.9rem;
+        color:#808080;
+    }
+}
+
+@include respond-to(md, all) {
+    .list_post {
+        li {
+            width:100%;
+            padding:0 0 20px 0;
+
+            &:nth-child(2n){
+                padding:0 0 20px 0;
+            }
+        }
+    }
+}

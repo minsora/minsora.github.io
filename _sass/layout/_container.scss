@@ -1,121 +1,101 @@
 #container {
-  position:relative;
-  min-height:100%;
-  margin-right:$header-width;
+    position:relative;
+    min-height:100%;
+    margin-right:$header-width;
 
-  .cont_top {
+    .cont_top {
 
-  }
-  .cont_sub {
-    padding:80px 8%;
-
-    h2 {
-      position:relative;
-      margin-bottom:50px;
-      font-weight:600;
-      font-size:3.2rem;
-      font-family:$header-font-point;
-      color:$title-font-color;
-
-      &::before {
-        content:'';
-        position:absolute;
-        left:8px;
-        top:0px;
-        width:4px;
-        height:4px;
-        background-color:$title-font-color;
-        @include prefix(border-radius, 50%);
-      }
     }
-    h3 {
-      font-weight:600;
-      font-size:1.4rem;
-      color:#777;
-    }
-    .sub_profile, .sub_certify, .sub_skill, .sub_career, .sub_contact {
-        float:left;
-        width:50%;
+    .cont_sub {
+        overflow:hidden;
+        padding:80px 8%;
 
-      dl {
-        padding:20px 0 30px 20px;
-        font-size:1rem;
-        color:#888;
+        h2 {
+            position:relative;
+            margin-bottom:50px;
+            font-weight:600;
+            font-size:3.2rem;
+            font-family:$header-font-point;
+            color:$title-font-color;
 
-        dt {
-          float:left;
-          padding-bottom:10px;
+            &::before {
+                content:'';
+                position:absolute;
+                left:8px;
+                top:0px;
+                width:4px;
+                height:4px;
+                background-color:$title-font-color;
+                @include prefix(border-radius, 50%);
+            }
         }
-        dd {
-          display:block;
-          margin-left:140px;
-          padding-bottom:10px;
+        h3 {
+            margin-bottom:20px;
+            padding:0 5px 5px;
+            border-bottom:1px solid $footer-bg-color;
+            font-weight:600;
+            font-size:1.4rem;
+            color:$footer-bg-color;
         }
-      }
+        h4 {
+            font-weight:600;
+            font-size:1.2rem;
+            color:#999;
+        }
     }
-  }
 }
 
 @include respond-to(md, all) {
-  #container {
-    margin-right:$header-width-md;
+    #container {
+        margin-right:$header-width-md;
 
-    .cont_sub {
+        .cont_sub {
 
-      h2 {
-        margin-bottom:30px;
-        font-size:3rem;
-      }
-      .sub_profile, .sub_certify, .sub_skill, .sub_career, .sub_contact {
-        float:none;
-        width:100%;
-      }
+            h2 {
+                margin-bottom:30px;
+                font-size:3rem;
+            }
+        }
     }
-  }
 }
 @include respond-to(sm, all) {
-  #container {
-    margin-right:0;
-    .cont_top {
-      display:block;
-      h2 {
-        margin-left:10px;
-        .link_logo {
-          font-size:1.5rem;
-          img {
-            width:30px;
-            height:30px;
-          }
+    #container {
+        margin-right:0;
+        .cont_top {
+            display:block;
+            h2 {
+                margin-left:10px;
+                .link_logo {
+                    font-size:1.5rem;
+                    img {
+                        width:30px;
+                        height:30px;
+                    }
+                }
+            }
+            .btn_nav {
+                width:26px;
+                margin-right:10px;
+                .ico_nav {
+                    height:3px;
+                    margin:8px 0;
+                }
+                &::before,&::after {
+                    height:3px;
+                }
+            }
         }
-      }
-      .btn_nav {
-        width:26px;
-        margin-right:10px;
-        .ico_nav {
-          height:3px;
-          margin:8px 0;
-        }
-        &::before,&::after {
-          height:3px;
-        }
-      }
-    }
-    .cont_sub {
-      margin-top:53px;
-      padding:30px 30px 50px;
+        .cont_sub {
+            margin-top:53px;
+            padding:30px 30px 50px;
 
-      h2 {
-        margin-bottom:20px;
-        font-size:2.6rem;
-      }
-      h3 {
-        font-size:1.2rem;
-      }
-      .sub_profile, .sub_certify, .sub_skill, .sub_career, .sub_contact {
-        dl {
-          padding-left:0;
+            h2 {
+                margin-bottom:20px;
+                font-size:2.6rem;
+            }
+            h3 {
+                font-size:1.2rem;
+            }
         }
-      }
     }
-  }
 }

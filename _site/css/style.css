@@ -25,13 +25,14 @@
 /* 대체 텍스트 */
 /* 말줄임 */
 /* 프리픽스 */
+/* 프레임 테두리 */
 /* 키프레임 */
 /* 반응형 */
 /*
 $breakpoints: (
-  'small': 320px,
-  'medium': 601px,
-  'large': 1001px
+    'small': 320px,
+    'medium': 601px,
+    'large': 1001px
 ); */
 /* @-moz-keyframes cloud_left { @content; } */
 @-webkit-keyframes cloud_left {
@@ -338,24 +339,24 @@ body {
     font-size: 0;
     line-height: 0;
     text-indent: -9999px; }
-  #header #nav .list_gnb li {
+  #header #nav .list_gnb li a {
+    display: block;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    font-family: "Amatic SC", cursive;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 1px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
-    #header #nav .list_gnb li a {
-      display: block;
-      padding: 10px 0;
-      font-size: 1.5rem;
-      font-family: "Amatic SC", cursive;
-      color: rgba(255, 255, 255, 0.9);
-      letter-spacing: 1px; }
-      #header #nav .list_gnb li a:hover {
-        text-decoration: none; }
-    #header #nav .list_gnb li:hover {
-      background-color: rgba(255, 255, 255, 0.1); }
-    #header #nav .list_gnb li.on {
-      background-color: #fff;
-      border-bottom: 0 none; }
-      #header #nav .list_gnb li.on a {
-        color: #F8C957; }
+    #header #nav .list_gnb li a:hover {
+      text-decoration: none; }
+  #header #nav .list_gnb li:first-child a {
+    border-top: 1px solid rgba(255, 255, 255, 0.3); }
+  #header #nav .list_gnb li:hover a {
+    background-color: rgba(255, 255, 255, 0.1); }
+  #header #nav .list_gnb li.on a {
+    color: #F8C957;
+    border: 0 none;
+    background-color: #fff; }
   #header .list_sns {
     overflow: hidden;
     position: absolute;
@@ -401,6 +402,7 @@ body {
   min-height: 100%;
   margin-right: 380px; }
   #container .cont_sub {
+    overflow: hidden;
     padding: 80px 8%; }
     #container .cont_sub h2 {
       position: relative;
@@ -421,33 +423,23 @@ body {
         -moz- border-radius: 50%;
         border-radius: 50%; }
     #container .cont_sub h3 {
+      margin-bottom: 20px;
+      padding: 0 5px 5px;
+      border-bottom: 1px solid #34495E;
       font-weight: 600;
       font-size: 1.4rem;
-      color: #777; }
-    #container .cont_sub .sub_profile, #container .cont_sub .sub_certify, #container .cont_sub .sub_skill, #container .cont_sub .sub_career, #container .cont_sub .sub_contact {
-      float: left;
-      width: 50%; }
-      #container .cont_sub .sub_profile dl, #container .cont_sub .sub_certify dl, #container .cont_sub .sub_skill dl, #container .cont_sub .sub_career dl, #container .cont_sub .sub_contact dl {
-        padding: 20px 0 30px 20px;
-        font-size: 1rem;
-        color: #888; }
-        #container .cont_sub .sub_profile dl dt, #container .cont_sub .sub_certify dl dt, #container .cont_sub .sub_skill dl dt, #container .cont_sub .sub_career dl dt, #container .cont_sub .sub_contact dl dt {
-          float: left;
-          padding-bottom: 10px; }
-        #container .cont_sub .sub_profile dl dd, #container .cont_sub .sub_certify dl dd, #container .cont_sub .sub_skill dl dd, #container .cont_sub .sub_career dl dd, #container .cont_sub .sub_contact dl dd {
-          display: block;
-          margin-left: 140px;
-          padding-bottom: 10px; }
+      color: #34495E; }
+    #container .cont_sub h4 {
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: #999; }
 
 @media (max-width: 1400px) {
   #container {
     margin-right: 330px; }
     #container .cont_sub h2 {
       margin-bottom: 30px;
-      font-size: 3rem; }
-    #container .cont_sub .sub_profile, #container .cont_sub .sub_certify, #container .cont_sub .sub_skill, #container .cont_sub .sub_career, #container .cont_sub .sub_contact {
-      float: none;
-      width: 100%; } }
+      font-size: 3rem; } }
 @media (max-width: 800px) {
   #container {
     margin-right: 0; }
@@ -475,9 +467,7 @@ body {
         margin-bottom: 20px;
         font-size: 2.6rem; }
       #container .cont_sub h3 {
-        font-size: 1.2rem; }
-      #container .cont_sub .sub_profile dl, #container .cont_sub .sub_certify dl, #container .cont_sub .sub_skill dl, #container .cont_sub .sub_career dl, #container .cont_sub .sub_contact dl {
-        padding-left: 0; } }
+        font-size: 1.2rem; } }
 .cont_top {
   display: none;
   position: fixed;
@@ -574,7 +564,7 @@ body {
     .cont_top .btn_nav:hover .ico_nav, .cont_top .btn_nav:hover:before, .cont_top .btn_nav:hover:after {
       background-color: rgba(255, 255, 255, 0.9); } }
 #footer {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   z-index: 100;
@@ -1776,6 +1766,14 @@ body {
   -webkit-animation: typing 10s steps(32, end), blink-caret 1s step-end infinite;
   animation: typing 10s steps(32, end), blink-caret 1s step-end infinite; }
 
+.txt_cmt {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  z-index: 1000;
+  font-size: 0.7rem;
+  color: #aaa; }
+
 /* media */
 @media (max-width: 1400px) {
   .cont_home .group_guide {
@@ -1817,7 +1815,10 @@ body {
   .cont_home .list_tag li:nth-child(9) {
     left: -500px; }
   .cont_home .list_tag li:nth-child(10) {
-    left: 390px; } }
+    left: 390px; }
+
+  .txt_cmt {
+    display: none; } }
 @media (max-width: 800px) {
   .cont_home {
     margin-left: 0; }
@@ -1911,3 +1912,229 @@ body {
         margin-top: 10px;
         -webkit-animation: typing 5s steps(32, end), blink-caret 1s step-end infinite;
         animation: typing 5s steps(32, end), blink-caret 1s step-end infinite; } }
+h3 {
+  margin-right: 20px; }
+
+.sub_profile, .sub_certify, .sub_skill, .sub_career, .sub_contact {
+  float: left;
+  width: 50%;
+  min-height: 300px; }
+  .sub_profile dl, .sub_certify dl, .sub_skill dl, .sub_career dl, .sub_contact dl {
+    padding: 10px 10px 20px;
+    font-size: 1rem;
+    color: #888; }
+    .sub_profile dl dt, .sub_certify dl dt, .sub_skill dl dt, .sub_career dl dt, .sub_contact dl dt {
+      float: left;
+      padding-bottom: 20px; }
+    .sub_profile dl dd, .sub_certify dl dd, .sub_skill dl dd, .sub_career dl dd, .sub_contact dl dd {
+      display: block;
+      margin-left: 130px;
+      padding-bottom: 20px; }
+      .sub_profile dl dd .txt_date, .sub_certify dl dd .txt_date, .sub_skill dl dd .txt_date, .sub_career dl dd .txt_date, .sub_contact dl dd .txt_date {
+        display: block;
+        font-size: 0.85rem;
+        color: #999; }
+
+@media (max-width: 1400px) {
+  h3 {
+    margin-right: 0; }
+
+  .sub_profile, .sub_certify, .sub_skill, .sub_career, .sub_contact {
+    float: none;
+    width: 100%;
+    min-height: inherit; } }
+@media (max-width: 800px) {
+  .sub_profile dl, .sub_certify dl, .sub_skill dl, .sub_career dl, .sub_contact dl {
+    padding-left: 0; } }
+.sub_project {
+  overflow: hidden;
+  padding-bottom: 20px; }
+  .sub_project h4 {
+    margin: 10px 10px 0; }
+
+.list_project {
+  margin: 10px 10px 20px; }
+  .list_project li {
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px; }
+    .list_project li:first-child {
+      margin-top: 0; }
+    .list_project li .img_project {
+      overflow: hidden;
+      float: left;
+      position: relative;
+      width: 200px;
+      height: 140px;
+      background: #fff; }
+      .list_project li .img_project img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        -moz-transform: translate(-50%, -50%) scale(1);
+        -o-transform: translate(-50%, -50%) scale(1);
+        -webkit-transition-duration: 0.5s;
+        -moz-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+        width: 100%;
+        height: 100%;
+        vertical-align: top; }
+      .list_project li .img_project:hover img {
+        -webkit-transform: translate(-50%, -50%) scale(1.1);
+        -moz-transform: translate(-50%, -50%) scale(1.1);
+        -o-transform: translate(-50%, -50%) scale(1.1); }
+      .list_project li .img_project::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        -webkit- box-sizing: border-box;
+        -moz- box-sizing: border-box;
+        box-sizing: border-box; }
+    .list_project li .info_project {
+      display: block;
+      overflow: hidden;
+      margin-left: 200px;
+      padding-left: 15px; }
+    .list_project li .tit_project {
+      display: block;
+      padding-bottom: 10px;
+      font-size: 1.1rem;
+      color: #333; }
+    .list_project li .btn_project {
+      display: inline-block;
+      height: 20px;
+      margin-top: 3px;
+      margin-left: 5px;
+      padding: 0 10px;
+      -webkit- border-radius: 3px;
+      -moz- border-radius: 3px;
+      border-radius: 3px;
+      font-weight: normal;
+      font-size: 0.75rem;
+      line-height: 20px;
+      color: rgba(255, 255, 255, 0.9);
+      background-color: #F8C957;
+      text-align: center;
+      text-decoration: none;
+      vertical-align: top; }
+      .list_project li .btn_project:hover {
+        background-color: #f5c000; }
+    .list_project li span.btn_project {
+      background-color: #ccc; }
+      .list_project li span.btn_project:hover {
+        background-color: #ccc; }
+    .list_project li .txt_project {
+      display: block;
+      font-size: 0.85rem;
+      color: #808080; }
+    .list_project li .list_info {
+      padding-top: 10px;
+      font-size: 0.8rem;
+      line-height: 1.3rem;
+      color: #808080; }
+      .list_project li .list_info dt {
+        float: left; }
+      .list_project li .list_info dd {
+        display: block;
+        overflow: hidden;
+        margin-left: 40px; }
+
+@media (max-device-width: 736px) {
+  .list_project li .img_project {
+    width: 100%;
+    height: auto; }
+    .list_project li .img_project img {
+      position: relative;
+      left: 0;
+      top: 0;
+      -webkit-transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      -o-transform: translate(0, 0); }
+    .list_project li .img_project:hover {
+      -webkit-transform: translate(0, 0) scale(1);
+      -moz-transform: translate(0, 0) scale(1);
+      -o-transform: translate(0, 0) scale(1); }
+  .list_project li .info_project {
+    float: left;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 10px; } }
+.list_post {
+  overflow: hidden; }
+  .list_post li {
+    float: left;
+    width: 50%;
+    padding-right: 10px;
+    -webkit- box-sizing: border-box;
+    -moz- box-sizing: border-box;
+    box-sizing: border-box; }
+    .list_post li:nth-child(2n) {
+      padding-left: 10px; }
+    .list_post li .group_post {
+      overflow: hidden;
+      height: 160px;
+      -webkit- box-sizing: border-box;
+      -moz- box-sizing: border-box;
+      box-sizing: border-box; }
+      .list_post li .group_post header {
+        overflow: hidden;
+        margin-bottom: 10px;
+        padding: 0 5px;
+        -webkit- box-sizing: border-box;
+        -moz- box-sizing: border-box;
+        box-sizing: border-box;
+        border-bottom: 1px solid #34495E; }
+        .list_post li .group_post header .tit_post {
+          float: left;
+          padding-bottom: 10px;
+          font-size: 1.1rem;
+          color: #333; }
+        .list_post li .group_post header .txt_date {
+          float: right;
+          position: relative;
+          top: 12px;
+          font-size: 0.7rem; }
+      .list_post li .group_post .post-content {
+        padding: 0 5px;
+        font-size: 0.85rem;
+        line-height: 1.4rem;
+        color: #808080; }
+        .list_post li .group_post .post-content .link_content {
+          display: block;
+          text-decoration: none; }
+          .list_post li .group_post .post-content .link_content ul {
+            overflow: hidden; }
+            .list_post li .group_post .post-content .link_content ul li {
+              float: none;
+              width: 100%;
+              padding: 0; }
+          .list_post li .group_post .post-content .link_content .bottom_btns {
+            display: block;
+            padding: 0 5px;
+            text-align: right; }
+            .list_post li .group_post .post-content .link_content .bottom_btns .txt_more {
+              font-size: 0.8rem; }
+
+.top_post {
+  position: relative; }
+  .top_post h3 {
+    margin-right: 0; }
+  .top_post .txt_date {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 0.9rem;
+    color: #808080; }
+
+@media (max-width: 1400px) {
+  .list_post li {
+    width: 100%;
+    padding: 0 0 20px 0; }
+    .list_post li:nth-child(2n) {
+      padding: 0 0 20px 0; } }

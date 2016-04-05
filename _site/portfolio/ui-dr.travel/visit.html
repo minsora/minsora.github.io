@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>dr.travel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   	<form action="#">
+		<div id="wrap">
+			<!-- 공통 영역 : 상단 -->
+			<header>
+				<h1 class="screen_out">Dr.travel</h1>
+				<h2 class="tit_page">다녀온 국가 선택</h2>
+				<nav>
+					<a href="#none" class="btn_noti">
+						<img src="img/navi/icon_back.png" width="25" height="25" alt="뒤로 가기">
+					</a>
+				</nav>
+			</header>
+			<div class="article">
+				<section class="section_search">
+					<div class="box_search"><!-- 입력폼 클릭시, box_search_on 클래스 추가 -->
+						<input type="text" class="inp_search" placeholder="국가명을 검색하세요." value="">
+						<button type="button" class="btn_del"><!-- btn_del 버튼 클릭시 입력폼 초기화 -->
+							<img src="img/search/icon_cancel2.png" width="15" height="15" alt="검색어 삭제">
+						</button>
+						<button type="button" class="btn_search">
+							<img src="img/search/icon_search2.png" width="18" height="18" alt="검색">
+						</button>
+					</div>
+				</section>
+				<section class="section_country">
+					<div class="box_map">
+						<img src="img/img_map.png" width="320" height="185" alt="세계지도">
+						<ul class="list_map">
+							<li class="china"><span class="point_map"></span></li>
+							<li class="japan"><span class="point_map"></span></li>
+							<li class="thailand"><span class="point_map"></span></li>
+							<li class="taiwan"><span class="point_map"></span></li>
+							<li class="hongkong"><span class="point_map"></span></li>
+						</ul>
+					</div>
+					<!-- 디폴트 -->
+					<!--
+					<div class="txt_country">
+						여행 다녀온 국가를 모두 선택해주세요.
+					</div>
+					-->
+					<!-- 국가 선택시 -->
+					<div class="txt_country">
+						선택된 국가
+					</div>
+					<div class="box_choice">
+						<ul class="list_choice" style="left:0;width:490px">
+						<!-- left의 값으로 좌우 슬라이딩 조절 -->
+						<!-- width 값 = 70px(li의 넓이 값) * 콘텐츠 개수(li의 개수) -->
+							<li>
+								<a href="#none" class="btn_country">
+									<img src="img/country/btn_korea2.png" width="70" height="70" alt="한국">
+								</a>
+							</li>
+							<li>
+								<a href="#none" class="btn_country">
+									<img src="img/country/btn_china2.png" width="70" height="70" alt="중국">
+								</a>
+							</li>
+							<li>
+								<a href="#none" class="btn_country">
+									<img src="img/country/btn_hongkong2.png" width="70" height="70" alt="홍콩">
+								</a>
+							</li>
+							<li>
+								<a href="#none" class="btn_country">
+									<img src="img/country/btn_thailand2.png" width="70" height="70" alt="태국">
+								</a>
+							</li>
+							<li>
+								<a href="#none" class="btn_country">
+									<img src="img/country/btn_vietnam2.png" width="70" height="70" alt="베트남">
+								</a>
+							</li>
+							<li>
+								<a href="#none" class="btn_country">
+									<img src="img/country/btn_philippines2.png" width="70" height="70" alt="필리핀">
+								</a>
+							</li>
+							<li>
+								<a href="#none" class="btn_country">
+									<img src="img/country/btn_taiwan2.png" width="70" height="70" alt="대만">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<ul class="list_country">
+						<li>
+							<a href="#none" class="btn_country">
+								<img src="img/country/btn_korea.png" width="100" height="100" alt="한국">
+							</a>
+						</li>
+						<li>
+							<a href="#none" class="btn_country">
+								<img src="img/country/btn_china.png" width="100" height="100" alt="중국">
+							</a>
+						</li>
+						<li>
+							<a href="#none" class="btn_country">
+								<img src="img/country/btn_japan.png" width="100" height="100" alt="일본">
+							</a>
+						</li>
+						<li>
+							<a href="#none" class="btn_country">
+								<img src="img/country/btn_hongkong.png" width="100" height="100" alt="홍콩">
+							</a>
+						</li>
+						<li>
+							<a href="#none" class="btn_country">
+								<img src="img/country/btn_thailand.png" width="100" height="100" alt="태국">
+							</a>
+						</li>
+						<li>
+							<a href="#none" class="btn_country">
+								<img src="img/country/btn_vietnam.png" width="100" height="100" alt="베트남">
+							</a>
+						</li>
+						<li>
+							<a href="#none" class="btn_country">
+								<img src="img/country/btn_philippines.png" width="100" height="100" alt="필리핀">
+							</a>
+						</li>
+						<li>
+							<a href="#none" class="btn_country">
+								<img src="img/country/btn_taiwan.png" width="100" height="100" alt="대만">
+							</a>
+						</li>
+						<li>
+							<a href="#none" class="btn_country">
+								<img src="img/country/btn_plus.png" width="100" height="100" alt="추가">	
+							</a>
+						</li>
+					</ul>
+				</section>
+			</div>
+			<aside class="aside_btns">
+				<button type="button" class="btn_country">선택완료</button>
+			</aside>
+		</div>
+	</form>
+</body>
+</html>

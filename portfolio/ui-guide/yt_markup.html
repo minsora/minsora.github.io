@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>UI GUIDE</title>
+    <link rel="shortcut icon" href="img/favicon.ico?1">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="js/comm.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<h1 class="tit_logo">
+				<a href="index.html" class="link_logo">
+                    <img src="img/logo.png" width="259" alt="yellotravel UI GUIDE">
+                </a>
+			</h1>
+			<ul class="list_gnb">
+				<li><a href="index.html" class="link_gnb">HOME</a></li>
+				<li><!-- gnb_on 클래스로 아이콘, 하위메뉴 조절 -->
+					<a href="mailform_ui.html" class="link_gnb">MAIL FORM</a>
+					<ul class="list_lnb">
+						<li class="lnb_in"><!-- lnb_on 클래스로 아이콘, 하위메뉴 조절 -->
+							<a href="mailform_ui.html" class="link_lnb">디자인 규칙</a>
+							<ul class="list_snb">
+								<li><!-- snb_on 클래스로 아이콘 하위메뉴 조절 -->
+									<a href="mailform_ui.html#1" class="link_snb">완료 공유</a>
+								</li>
+								<li>
+									<a href="mailform_ui.html#2" class="link_snb">수정 요청</a>
+								</li>
+							</ul>
+						</li>
+						<li class="lnb_in">
+							<a href="mailform_markup.html" class="link_lnb">마크업 규칙</a>
+							<ul class="list_snb">
+								<li>
+									<a href="mailform_markup.html#1" class="link_snb">완료 공유</a>
+								</li>
+								<li>
+									<a href="mailform_markup.html#2" class="link_snb">수정 요청</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="gnb_on">
+					<a href="yt.html" class="link_gnb">YT CORP</a>
+					<ul class="list_lnb">
+						<li class="lnb_in">
+							<a href="yt.html" class="link_lnb">파일 규칙</a>
+							<ul class="list_snb">
+								<li>
+									<a href="yt.html#1" class="link_snb">DESIGN</a>
+								</li>
+								<li>
+									<a href="yt.html#2" class="link_snb">MARK UP</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="yt_ui.html" class="link_lnb">디자인 규칙</a>
+						</li>
+						<li class="lnb_on">
+							<a href="yt_markup.html" class="link_lnb">마크업 규칙</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="wp.html" class="link_gnb">WOORIPENSION</a>
+					<ul class="list_lnb">
+						<li class="lnb_in">
+							<a href="wp.html" class="link_lnb">파일 규칙</a>
+							<ul class="list_snb">
+								<li>
+									<a href="wp.html#1" class="link_snb">DESIGN</a>
+								</li>
+								<li>
+									<a href="wp.html#2" class="link_snb">MARK UP</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="wp_ui.html" class="link_lnb">디자인 규칙</a>
+						</li>
+						<li>
+							<a href="wp_markup.html" class="link_lnb">마크업 규칙</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="admin.html" class="link_gnb">ADMIN</a>
+					<ul class="list_lnb">
+						<li class="lnb_in">
+							<a href="admin.html" class="link_lnb">파일 규칙</a>
+							<ul class="list_snb">
+								<li>
+									<a href="admin.html#1" class="link_snb">DESIGN</a>
+								</li>
+								<li>
+									<a href="admin.html#2" class="link_snb">MARK UP</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="admin_ui.html" class="link_lnb">디자인 규칙</a>
+						</li>
+						<li>
+							<a href="admin_markup.html" class="link_lnb">마크업 규칙</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div><!-- //header -->
+		<div id="container">
+			<div class="cont">
+				<div class="top_info">
+                    <h4>마크업 규칙</h4>
+					<div class="path_info">
+						<i class="fa fa-home"></i> &gt; YT CORP &gt; 마크업 규칙
+					</div>
+					<div class="txt_editor">2015.08.26. &nbsp;담당자 : 민소라</div>
+                </div>
+                <div class="desc_info">
+                    <h5>HTML</h5>
+                    <p>
+                        아래의 레이아웃을 참고하여 작업한다.
+                    </p>
+                </div>
+                <div class="detail_info">
+                    <h6>DOCTYPE</h6>
+                    <div class="info_detail">
+                        <strong class="tit_code">HTML5</strong>
+                        <br>
+                        <code class="box_code">
+                            &lt;!DOCTYPE html&gt;
+                        </code>
+                    </div>
+                </div>
+                <div class="detail_info">
+                    <h6>LAYOUT</h6>
+                    <div class="info_detail">
+                        <div class="box_layout">
+                            <div class="wrap">
+                                &lt;div id="wrap" class="wrap_travel"&gt;..&lt;/div&gt;
+                                <div class="header">
+                                    &lt;div id="head" class="head_travel"&gt;..&lt;/div&gt;
+                                    <div class="inner">
+                                        &lt;div class="tit_logo"&gt;..&lt;/div&gt; ,
+                                        &lt;div class="list_gnb"&gt;..&lt;/div&gt; ,
+                                        &lt;div class="top_lang"&gt;..&lt;/div&gt;
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <span class="txt_layout">&lt;div id="cont" class="cont_travel"&gt;..&lt;/div&gt;</span>
+                                    <div class="inner">
+                                        &lt;div class="travel_(name)"&gt;..&lt;/div&gt;
+                                    </div>
+                                    <div class="inner">
+                                        &lt;div class="travel_(name)"&gt;..&lt;/div&gt;
+                                    </div>
+                                    ...
+                                </div>
+                                <div class="footer">
+                                    &lt;div id="foot" class="foot_travel"&gt;..&lt;/div&gt;
+                                    <div class="inner">
+                                        &lt;div class="travel_copy"&gt;..&lt;/div&gt;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>위의 레이아웃의 기본으로 하며, 운영되고 있는 페이지의 마크업을 복사해 해당 수정 부분만 작업한다.</p>
+                    </div>
+                </div>
+                <div class="desc_info">
+                    <h5>WORK SPACE</h5>
+                    <p>
+                        마크업, css, image 작업 <b class="txt_point">모두 yt 폴더</b>에서 작업하고, 로컬에서는 <em><a href="http://company.ytlocal.com/" target="_blank">http://company.ytlocal.com/</a></em>로 확인할 수 있으며, <br>
+                        테스트 버전은 <a href="http://175.126.125.230/" target="_blank">http://175.126.125.230/</a>에서 최종 버전 적용은 <a href="http://yellotravel.com/" target="_blank">http://yellotravel.com/</a>에서 확인이 가능하다.
+                    </p>
+                </div>
+                <div class="detail_info">
+                    <h6>작업 방식</h6>
+                    <div class="info_detail">
+                        마크업 작업은 개발 작업과 같게 git으로 버전관리를 하며 <br>
+                        github.com에서 vagrant-wooripension-dev에 있는 설명과 같게 터미널을 이용하여 vagrant를 설치하여 작업한다.
+                    </div>
+                </div>
+                <div class="detail_info">
+                    <h6>작업 경로</h6>
+                    <div class="info_detail">
+                        <strong>HTML</strong><br>
+                        <br>
+                        <div class="box_explan">
+                            <span class="emph_explan">
+                                페이지가 새로 작업할 경우에 사용되며, 우리펜션 실서비스나 운영 페이지의 레이아웃 구성을 가져와서 작업한다.
+                            </span>
+                            <br>
+                            <div class="box_path">
+                                <i class="fa fa-folder-o"></i> yt &nbsp;&#62;&nbsp; <i class="fa fa-folder-o"></i> vagrant-wooripension-dev &nbsp;&#62;&nbsp; <i class="fa fa-folder-o"></i> www
+                            </div>
+                        </div>
+                        <br><br><br>
+                        <strong>CSS</strong><br>
+                        <br>
+                        <div class="box_explan">
+                            <span class="emph_explan">
+                                css는 크게 bootstrap.css, font-awesome.css, layout.css로 적용되어 있으며, <br>
+                                실제 작업은 layout.css에서만 하며 bootstrap.css에서 수정해야될 부분은 클래스를 가져와 오버라이딩해서 작업하는 것을 원칙으로 한다.
+                            </span>
+                            <br>
+                            <div class="box_path">
+                                <i class="fa fa-folder-o"></i> yt &nbsp;&#62;&nbsp; <i class="fa fa-folder-o"></i> vagrant-wooripension-dev &nbsp;&#62;&nbsp; <i class="fa fa-folder-o"></i> www &nbsp;&#62;&nbsp; <i class="fa fa-folder-o"></i> css
+                            </div>
+                            <br><br>
+                            <span class="emph_explan">
+                                기존 콘텐츠와 관련된 콘텐츠를 작업할 경우에는 해당 콘텐츠의 css 위치를 찾아 하단에 날짜 주석을 기입해 처리하고, <br>
+                            </span>
+                            <br>
+                            <code class="box_code">
+                                <span class="txt_etc">
+                                    /* gnb */ <br>
+                                    #gnb {overflow:hidden;..} <br>
+                                    #gnb li {float:left;..}
+                                </span>
+                                <br>
+                                <br>
+                                /* 20150801 추가 시작 */ <br>
+                                #gnb .link_gnb {display:block;..} <br>
+                                #gnb .link_gnb .ico_gnb {width:6px;..} <br>
+                                /* 20150801 추가 끝 */ <br>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="txt_etc">.. OR ..</span> <br>
+                                <br>
+                                #gnb .link_gnb {display:block;..} /* 20150801 추가 */ <br>
+                                #gnb .link_gnb .ico_gnb {width:6px;..} /* 20150801 추가 */ <br>
+                            </code>
+                            <br><br>
+                            <span class="emph_explan">
+                                새로운 콘텐츠 작업의 경우에는 layout.css의 하단에 해당 부분의 설명과 날짜를 주석 처리하여 추가한다.
+                            </span>
+                            <br>
+                            <code class="box_code">
+                                /* 200150801 side 영역 닫기/열기 */<br>
+                                .cont_admin .admin_content {margin-left:230px;} /* default - side 열기 */ <br>
+                                .sidemenu_close .cont_admin .admin_content {margin-left:0;} /* sidemenu_close 클래스 추가시 side 닫기 */
+                            </code>
+                        </div>
+                        <br><br><br>
+                        <strong>IMAGE</strong><br>
+                        <br>
+                        <div class="box_explan">
+                            <span class="emph_explan">
+                                아이콘의 경우 이미지 스프라이트 기법을 사용하여 작업한다. <br>
+                                yt 사이트의 경우 반응형이기 때문에 pc와 mobile을 따로 작업하고, 고해상도 대응을 한다.
+                            </span>
+                            <br>
+                            <div class="box_code">
+                                <i class="fa fa-file-image-o"></i> img_comm_v1.png , &nbsp; <i class="fa fa-file-image-o"></i> img_comm_v2.png , &nbsp; <i class="fa fa-file-image-o"></i> img_comm_m1.png ...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail_info">
+                    <h6>디렉토리 경로</h6>
+                    <div class="info_detail">
+                        아래의 디렉토리를 참고하여 작업한다.<br>
+                        <br>
+                        <span class="tit_dic"><i class="fa fa-folder-open-o"></i> www</span>
+                        <ul class="list_dic">
+                            <li>
+                                <b class="tit_dic"><i class="fa fa-file-code-o"></i> index.php</b> <span class="txt_dic">: 메인 </span>
+                            </li>
+                            <li>
+                                <b class="tit_dic"><i class="fa fa-folder-open-o"></i> about</b>
+                                <ul class="list_dic">
+                                    <li>
+                                        <em class="tit_dic"><i class="fa fa-file-code-o"></i> index.php</em>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b class="tit_dic"><i class="fa fa-folder-open-o"></i> services</b>
+                                <ul class="list_dic">
+                                    <li>
+                                        <em class="tit_dic"><i class="fa fa-file-code-o"></i> index.php</em>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b class="tit_dic"><i class="fa fa-folder-o"></i> wp</b> <span class="txt_dic">: 워드프레스 폴더(게시판 페이지) </span>
+                            </li>
+                            <li>
+                                <b class="tit_dic"><i class="fa fa-folder-o"></i> inc</b> <span class="txt_dic">: 공통영역 php </span>
+                                <ul class="list_dic">
+                                    <li>
+                                        <em class="tit_dic"><i class="fa fa-file-code-o"></i> head.php</em> <span class="txt_dic">: head 공통 영역 </span>
+                                    </li>
+                                    <li>
+                                        <em class="tit_dic"><i class="fa fa-file-code-o"></i> top.php</em> <span class="txt_dic">: gnb 공통 영역 </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b class="tit_dic"><i class="fa fa-file-code-o"></i> 404.php</b> <span class="txt_dic">: 404 에러 페이지 </span>
+                            </li>
+                            <li>
+                                <b class="tit_dic"><i class="fa fa-folder-o"></i> img</b>
+                            </li>
+                            <li>
+                                <b class="tit_dic"><i class="fa fa-folder-o"></i> css</b>
+                                <ul class="list_dic">
+                                    <li>
+                                        <em class="tit_dic"><i class="fa fa-file-code-o"></i> common.css</em>
+                                    </li>
+                                    <li>
+                                        <em class="tit_dic"><i class="fa fa-file-code-o"></i> ie8.css</em>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b class="tit_dic"><i class="fa fa-folder-o"></i> js</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+			</div><!--// cont -->
+            <a href="#" class="btn_top"><img src="img/top.jpg" width="46" height="46" alt="위로"></a>
+		</div>
+		<div id="footer">
+			Copyright © yt Corp All Rights Reserved
+		</div>	
+	</div>
+</body>
+</html>

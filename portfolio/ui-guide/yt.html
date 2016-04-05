@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>UI GUIDE</title>
+    <link rel="shortcut icon" href="img/favicon.ico?1">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="js/comm.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<h1 class="tit_logo">
+				<a href="index.html" class="link_logo">
+                    <img src="img/logo.png" width="259" alt="yellotravel UI GUIDE">
+                </a>
+			</h1>
+			<ul class="list_gnb">
+				<li><a href="index.html" class="link_gnb">HOME</a></li>
+				<li><!-- gnb_on 클래스로 아이콘, 하위메뉴 조절 -->
+					<a href="mailform_ui.html" class="link_gnb">MAIL FORM</a>
+					<ul class="list_lnb">
+						<li class="lnb_in"><!-- lnb_on 클래스로 아이콘, 하위메뉴 조절 -->
+							<a href="mailform_ui.html" class="link_lnb">디자인 규칙</a>
+							<ul class="list_snb">
+								<li><!-- snb_on 클래스로 아이콘 하위메뉴 조절 -->
+									<a href="mailform_ui.html#1" class="link_snb">완료 공유</a>
+								</li>
+								<li>
+									<a href="mailform_ui.html#2" class="link_snb">수정 요청</a>
+								</li>
+							</ul>
+						</li>
+						<li class="lnb_in">
+							<a href="mailform_markup.html" class="link_lnb">마크업 규칙</a>
+							<ul class="list_snb">
+								<li>
+									<a href="mailform_markup.html#1" class="link_snb">완료 공유</a>
+								</li>
+								<li>
+									<a href="mailform_markup.html#2" class="link_snb">수정 요청</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="gnb_on">
+					<a href="yt.html" class="link_gnb">YT CORP</a>
+					<ul class="list_lnb">
+						<li class="lnb_in lnb_on">
+							<a href="yt.html" class="link_lnb">파일 규칙</a>
+							<ul class="list_snb">
+								<li class="snb_on">
+									<a href="yt.html#1" class="link_snb">DESIGN</a>
+								</li>
+								<li>
+									<a href="yt.html#2" class="link_snb">MARK UP</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="yt_ui.html" class="link_lnb">디자인 규칙</a>
+						</li>
+						<li>
+							<a href="yt_markup.html" class="link_lnb">마크업 규칙</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="wp.html" class="link_gnb">WOORIPENSION</a>
+					<ul class="list_lnb">
+						<li class="lnb_in">
+							<a href="wp.html" class="link_lnb">파일 규칙</a>
+							<ul class="list_snb">
+								<li>
+									<a href="wp.html#1" class="link_snb">DESIGN</a>
+								</li>
+								<li>
+									<a href="wp.html#2" class="link_snb">MARK UP</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="wp_ui.html" class="link_lnb">디자인 규칙</a>
+						</li>
+						<li>
+							<a href="wp_markup.html" class="link_lnb">마크업 규칙</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="admin.html" class="link_gnb">ADMIN</a>
+					<ul class="list_lnb">
+						<li class="lnb_in">
+							<a href="admin.html" class="link_lnb">파일 규칙</a>
+							<ul class="list_snb">
+								<li>
+									<a href="admin.html#1" class="link_snb">DESIGN</a>
+								</li>
+								<li>
+									<a href="admin.html#2" class="link_snb">MARK UP</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="admin_ui.html" class="link_lnb">디자인 규칙</a>
+						</li>
+						<li>
+							<a href="admin_markup.html" class="link_lnb">마크업 규칙</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div><!-- //header -->
+		<div id="container">
+			<div class="cont">
+				<div class="top_info">
+                    <h4>파일 규칙</h4>
+					<div class="path_info">
+						<i class="fa fa-home"></i> &gt; YT CORP &gt; 파일 규칙
+					</div>
+					<div class="txt_editor">2015.08.26. &nbsp;담당자 : 민소라</div>
+                </div>
+                <div id="1" class="desc_info">
+                    <h5>DESIGN</h5>
+                    <p>
+                        기존 파일은 유지하고 새로 파일을 생성해 해당 파일 이름 뒤에 아래의 파일명 규칙을 참고하여 관리한다.
+                    </p>
+                </div>
+                <div class="detail_info">
+                    <h6>파일명</h6>
+                    <div class="info_detail">
+                        일반적으로 파일명은 <em>메뉴명+날짜(전달일)</em>로 파일명을 구성한다.<br>
+                        ex) service_20150801.psd<br>
+                        <br>
+                        파일 전달일에 파일 수정이나 업데이트가 생길 시, 아래와 같이 <em>v(version)+숫자</em>로 구성한다.<br>
+                        ex) service_20150801_v.1.psd<br>
+                        <br>
+                        파일 전달일이 아닌 다른 날짜의 경우에는 해당 날짜로 변경해 재전달하고 버전은 초기화한다.
+                    </div>
+                </div>
+                <div class="detail_info">
+                    <h6>폴더 관리</h6>
+                    <div class="info_detail">
+                        폴더 분류는 다음의 규칙을 따른다. <br>
+                        디자인 폴더 정리는 main과 sub 그리고 기타 페이지인 etc 폴더로 나누어 정리한다. <br> 
+                        <em>작업 파일(psd)</em>과 <em>미리보기 파일(jpg)</em>을 같은 폴더에 정리한다. <br>
+                        미리보기 파일(jpg)의 경우에는 전체적인 레이아웃이나 디자인 변경이 많은 경우에만 업데이트한다. <br>
+                        <strong class="tit_dic"><i class="fa fa-folder-open-o"></i> yt_corp</strong>
+                        <ul class="list_dic">
+                            <li>
+                                <em class="tit_dic"><i class="fa fa-folder-o"></i> 00_기획안</em>
+                            </li>
+                            <li>
+                                <em class="tit_dic"><i class="fa fa-folder-open-o"></i> 01_main</em>
+                                <ul class="list_dic">
+                                    <li><i class="fa fa-file-image-o"></i> main.psd</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <em class="tit_dic"><i class="fa fa-folder-open-o"></i> 02_sub</em>
+                                <ul class="list_dic">
+                                    <li><i class="fa fa-file-image-o"></i> 01_about.psd</li>
+                                    <li><i class="fa fa-file-image-o"></i> 01_about.jpg</li>
+                                    <li><i class="fa fa-file-image-o"></i> 02_services.psd</li>
+                                    <li><i class="fa fa-file-image-o"></i> 02_services.jpg</li>
+                                    <li><i class="fa fa-file-image-o"></i> 03_news.psd</li>
+                                    <li><i class="fa fa-file-image-o"></i> 03_news.jpg</li>
+                                    <li><i class="fa fa-file-image-o"></i> 04_career.psd</li>
+                                    <li><i class="fa fa-file-image-o"></i> 04_career.jpg</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <em class="tit_dic"><i class="fa fa-folder-open-o"></i> 03_etc</em>
+                                <ul class="list_dic">
+                                    <li><i class="fa fa-file-image-o"></i> 404_error.psd</li>
+                                    <li><i class="fa fa-file-image-o"></i> 404_error.jpg</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <em class="tit_dic"><i class="fa fa-folder-o"></i> 04_참고자료</em>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="detail_info">
+                    <h6>psd 구성</h6>
+                    <div class="info_detail">
+                        현재 공용폴더의 psd에서 큰 틀은 변경하지 않고 세부 사항만 변경하여 날짜를 기입하여 업로드한다.
+                        <br><br><br>
+                        <b class="txt_point">psd 파일의 구성</b>은 큰 단락으로 header / container / footer로 나눠져 있다. <br><br>
+                        header는 투명 배경과 흰색 배경으로 2가지 type으로 되어있으며, 서브 페이지에는 사이드 영역을 넣지 않고 <br>
+                        신규 페이지 작업은 기존 페이지를 참고하여 작업한다.<br><br>
+                        visual 부분은 기본 명칭을 visual로 하고 페이지 또는 위치에 따라 main visual, sub top visual 등으로 덧붙여 사용한다.
+                        <table class="tbl_brd">
+                            <tr>
+                                <th style="width:100px">header</th>
+                                <td colspan="2">
+                                    <img src="img/yt_corp/yt_guide_header.jpg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th rowspan="3">container</th>
+                                <td class="sub_tit" style="width:60px">visual</td>
+                                <td>
+                                    <img src="img/yt_corp/yt_guide_visual.jpg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="sub_tit">cont</td>
+                                <td>
+                                    <img src="img/yt_corp/yt_guide_container.jpg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="sub_tit">board</td>
+                                <td>
+                                    <img src="img/yt_corp/yt_guide_board.jpg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>footer</th>
+                                <td colspan="2">
+                                    <img src="img/yt_corp/yt_guide_footer.jpg" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                        <br><br><br>
+                        main page는 풀스크린 방식의 이미지로 슬라이드 방식으로 이미지 교체 시에는 따로 시안 작업을 하지않고 이미지만 전달한다. <br>
+                        sub page는 <em>기본 타입(type1)</em>와 <em>게시판 타입(type2)</em>로 총 2가지 타입으로 되어있으며, 아래의 표를 참고하여 작업한다. <br><br>
+                        게시판은 워드프레스 게시판을 커스터마이징해서 적용해 css로 디자인만 수정하여 사용하고 있기 때문에<br> 
+                        디자인 변경을 원할 시 프론트 엔드 개발팀과 논의 후 작업한다.
+                        <br><br>
+                        <strong>메인</strong>
+                        <table class="tbl_brd">
+                            <tr>
+                                <td rowspan="2">
+                                    <img src="img/yt_corp/yt_guide01.jpg" alt="">
+                                </td>
+                                <td>
+                                    <span class="txt_type">
+                                        <i class="fa fa-folder-open-o"></i> guide <br>
+                                        <i class="fa fa-folder-open-o"></i> header <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-folder-o"></i> gnb<br>
+                                        <i class="fa fa-folder-open-o"></i> footer <br>
+                                        <i class="fa fa-folder-open-o"></i> container <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-folder-o"></i> text<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-folder-o"></i> visual<br>
+                                        
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="img/yt_corp/yt_guide01_ps.jpg" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                         ※ 기본적으로 header > container > footer 순으로 레이어 정리를 하는 것을 원칙으로 하지만 메인과 같은 특수한 경우에는<br>
+                        &nbsp;&nbsp;&nbsp;footer 영역을 container 상단으로 올린다.
+                        <br><br><br>
+                        <strong>type1(기본 타입)</strong>
+                        <table class="tbl_brd">
+                            <tr>
+                                <td rowspan="2">
+                                    <img src="img/yt_corp/yt_guide02.jpg" alt="">
+                                </td>
+                                <td>
+                                    <span class="txt_type">
+                                        <i class="fa fa-folder-open-o"></i> guide <br>
+                                        <i class="fa fa-folder-open-o"></i> header <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-folder-o"></i> gnb<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-folder-o"></i> top sub visual<br>
+                                        <i class="fa fa-folder-open-o"></i> container <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-folder-o"></i> introduce<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-folder-o"></i> history<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-folder-o"></i> contact us<br>
+                                        <i class="fa fa-folder-open-o"></i> footer <br>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="img/yt_corp/yt_guide02_ps.jpg" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                        ※ 서브 페이지에서 각각의 내용에 맞게 단락을 나눠 해당 내용의 제목과 함께 상세 폴더를 정리한다.
+                        <br><br><br>
+                        <strong>type2(게시판 타입)</strong>
+                        <table class="tbl_brd">
+                            <tr>
+                                <td rowspan="2">
+                                    <img src="img/yt_corp/yt_guide03.jpg" alt="">
+                                </td>
+                                <td>
+                                    <span class="txt_type">
+                                        <i class="fa fa-folder-open-o"></i> guide <br>
+                                        <i class="fa fa-folder-open-o"></i> header <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-folder-o"></i> gnb<br>
+                                        <i class="fa fa-folder-open-o"></i> container <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-folder-o"></i> board<br>
+                                        <i class="fa fa-folder-open-o"></i> footer <br>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="img/yt_corp/yt_guide03_ps.jpg" alt="">
+                                </td>
+                            </tr>
+                        </table>
+                        <br><br><br>
+                        <strong>레이어 폴더 설명</strong>
+                        <br><br><br>
+                        <div class="box_explan">
+                            <strong class="tit_explan"><i class="fa fa-folder-o"></i> guide</strong>
+                            <div class="txt_explan">
+                                <span class="emph_explan">가이드 영역</span>
+                                <br>
+                                작업된 영역 또는 부분 수정된 부분을 다음 작업자가 알아보기 쉽게 표시를 해주기 위한 레이어 폴더이다.<br>
+                                작업한 영역을 박스로 표시하고 레이어 파일 이름에 번호와 작업 부분에 대한 설명을 기입한다.
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="box_explan">
+                            <strong class="tit_explan"><i class="fa fa-folder-o"></i> header</strong>
+                            <div class="txt_explan">
+                                <span class="emph_explan">상단 영역</span>
+                                <br>
+                                기본 틀을 유지하고 특별한 경우를 제외하고 변경하지 않는 것을 원칙으로 한다.
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="box_explan">
+                            <strong class="tit_explan"><i class="fa fa-folder-o"></i> container</strong>
+                            <div class="txt_explan">
+                                <span class="emph_explan">본문 영역</span>
+                                <br>
+                                해당 페이지에 맞는 내용을 폴더로 나누어 정리한다.
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="box_explan">
+                            <strong class="tit_explan"><i class="fa fa-folder-o"></i> footer</strong>
+                            <div class="txt_explan">
+                                <span class="emph_explan">하단 영역</span>
+                                <br>
+                                기본 틀을 유지하고 특별한 경우를 제외하고 변경하지 않는 것을 원칙으로 한다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="2" class="desc_info">
+                    <h5>MARK UP</h5>
+                    <p>
+                        HTML 파일은 따로 폴더 없이 최상단에서 작업하고 나머지 작업은 각각의 폴더(css, img, js)에서 작업한다.
+                    </p>
+                </div>
+                <div class="detail_info">
+                    <h6>파일명</h6>
+                    <div class="info_detail">
+                        <strong>HTML 작업시</strong>
+                        <br><br>
+                        <div class="box_explan">
+                            <strong class="tit_explan"><i class="fa fa-folder-o"></i> www</strong>
+                            <div class="txt_explan">
+                                <span class="emph_explan">마크업 작업 영역</span>
+                                <br>
+                                파일명은 디자인 파일과의 작업 확인을 편리하게 하기 위해, <em>디자인 파일명과 동일</em>하게 하는 것을 원칙으로 한다.<br>
+                                디자인 파일명의 규칙은 아래와 같다.<br>
+                                <br>
+                                <em>메뉴명+날짜(디자인 파일명의 날짜와 동일)</em>로 파일명을 구성한다.<br>
+                                ex) service_20150801.html<br>
+                                <br>
+                                파일 전달일에 파일 수정이나 업데이트가 생길 시, 아래와 같이 <em>v(version)+숫자</em>로 구성한다.<br>
+                                ex) service_20150801_v.1.html<br>
+                            </div>
+                        </div>
+                        <br><br><br>
+                        <strong>CSS 작업시</strong>
+                        <br><br>
+                        <div class="box_explan">
+                            <strong class="tit_explan"><i class="fa fa-folder-o"></i> css</strong>
+                            <div class="txt_explan">
+                                <span class="emph_explan">CSS 작업 영역</span>
+                                <br>
+                                파일 상단에 <em>메뉴명+날짜(디자인 파일명의 날짜와 동일)</em>을 기입해 해당 파일의 업데이트를 주석처리 한다. <br>
+                                주석은 디자인 사안의 버전과 맞춰 작업하는 것을 원칙으로 한다.
+                                <br><br>
+                                <code class="box_code">
+                                    /* 20150801_v.1 */
+                                </code>
+                            </div>
+                        </div>
+                        <br><br><br>
+                        <strong>image 작업시</strong>
+                        <br><br>
+                        <div class="box_explan">
+                            <strong class="tit_explan"><i class="fa fa-folder-o"></i> img</strong>
+                            <div class="txt_explan">
+                                <span class="emph_explan">이미지 파일 영역</span>
+                                <br>
+                                <em>이미지 스프라이트 방식</em>을 사용하여 작업하고 기존 작업되어있는 이미지 파일은 그대로 유지하고<br> 
+                                파일명 뒤에 버전을 붙여 새로운 파일명으로 변경한다.
+                            </div>
+                        </div>
+                        <br><br><br>
+                        <strong>스크립트 작업시</strong>
+                        <br><br>
+                        <div class="box_explan">
+                            <strong class="tit_explan"><i class="fa fa-folder-o"></i> js</strong>
+                            <div class="txt_explan">
+                                <span class="emph_explan">스크립트 파일 영역</span>
+                                <br>
+                                작업을 하면서 사용되거나 추가할 <em>플러그인을 js 폴더에 원본을 변경하지 않고 추가</em>한다. <br>
+                                플러그인에 사용된 css를 변경하고자 할 경우에는 style.css 파일의 하단에 오버라이딩해서 사용하는 것을 원칙으로 한다.
+                                <br><br>
+                                <code class="box_code">
+                                    &lt;!-- 2015-08-01 selectric plugin 실행문 --&gt; <br>
+                                    &lt;script&gt; <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;$(function() { <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$('.cover_select select').selectric(); <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;}); <br>
+                                    &lt;/script&gt;
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div><!--// cont -->
+            <a href="#" class="btn_top"><img src="img/top.jpg" width="46" height="46" alt="위로"></a>
+		</div>
+		<div id="footer">
+			Copyright © yt Corp All Rights Reserved
+		</div>	
+	</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+@import url(common.css);
+@import url(subCommon.css);
+
+body {font-size:12px;}
+.cont {padding:10px 0 15px 15px;}
+.cont p.joinTop {width:755px; padding:25px 0 30px 5px; border-bottom:1px dashed #b7b7b7;}
+	.agree1, .agree2 {padding:10px 10px 20px 10px; text-align:center;}
+	.name {padding:10px; background:url(../images/sub03_dot.gif) no-repeat 0 15px; text-align:left;}
+	.agreeBox {width:710px; padding:15px; height:148px; overflow-y:auto; border:1px solid #cedab9; background:#f7fff2; 
+				line-height:20px; color:#333; margin-bottom:10px; text-align:left;}
+	.agreeBox p span {font-weight:bold;}
+
+	.check {float:right; padding-right:20px; color:#333;}
+	.check input {padding-right:10px; vertical-align:middle;}
+
+	.agreeBtn {clear:both; padding:15px 0 0 0;}

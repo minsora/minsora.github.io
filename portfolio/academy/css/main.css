@@ -1,0 +1,113 @@
+@charset "utf-8";
+@import url(common.css);
+
+body {background:url(../images/main_bg.gif) repeat-x left top;}
+
+#visual {height:187px;}
+	#issue {position:relative; float:left; width:751px;}
+	#issue dt {position:absolute; top:134px;}
+		.vbtn1 {left:670px;}
+		.vbtn2 {left:695px;}
+		.vbtn3 {left:720px;}
+	#issue dd {}
+		.vd1 {}
+		.vd2,.vd3 {display:none;}
+	
+	#loginForm {float:right; width:242px; background:url(../images/login_bg.gif) no-repeat left 38px;}
+		#login {height:124px; color:#71a517; font-size:12px; padding:9px 14px 0 14px; position:relative;}
+		#login a {color:#71a517; font-size:12px;}
+		#login a:hover {text-decoration:underline;}
+		#login li a {font-size:11px;}
+			.selectbox {height:27px;}
+			.idbox input,.pwbox input {width:140px; height:18px; border:1px solid #ccc; color:#333; font-size:12px;}
+			.idbox {float:left;}
+			.idbox input {background:url(../images/idboxTxt.gif) no-repeat;}
+			.pwbox {float:left; padding-top:6px;}
+			.pwbox input {background:url(../images/pwboxTxt.gif) no-repeat;}
+			.loginBtn {position:absolute; left:167px; top:36px;}
+			.joinBtn {clear:both; float:left; width:72px; padding:12px 16px 0 2px;}
+			.joinBtn a {font-weight:bold;}
+			.idpwBox {float:left; width:118px; padding-top:12px;}
+
+#container1 {clear:both; float:left; width:380px; border-bottom:4px solid #70a810;}
+	#cont1 {}
+		h4 {padding-bottom:3px;}
+		h4.c4Tit {padding-bottom:0;}
+		#camList {width:376px; height:477px; background:url(../images/camList_bg.gif) repeat-y; padding-left:4px;}
+		#camList li {}
+		#camList li p {}
+
+#container2 {float:left; width:614px; height:405px; padding-left:10px;}
+	#cont1 {float:left; width:338px; border:1px solid #c7c7c7; background-color:#fff; padding:9px 10px;}
+		#movieFrame {position:relative; width:100%;  background:url(../images/cont2_bgline.gif) no-repeat left 108px;}
+		#movieFrame p {position:absolute; top:48px;}
+			#leftBtn {left:5px;}
+			#rightBtn {right:8px;}
+			.c2 p,.c3 p,.c4 p {display:none;}
+
+		#movieList {padding:12px 0 14px 28px; height:84px; width:305px;}
+		#movieList li {width:282px; position:absolute; left:28px; top:28px;}
+		#movieList li a {line-height:15px; text-align:justify;}
+		#movieList li a img {float:left; border:1px solid #b9b9b9; margin-right:9px;}
+		#movieList li a span {font-weight:bold; display:block; padding-bottom:8px; letter-spacing:-0.2px;}
+			.ml1 {}
+			.ml2 {}
+			.ml3 {}
+
+		#noticeTab {clear:both; position:relative; width:100%; height:152px; 
+					background:url(../images/cont2_bgline.gif) no-repeat left 135px;}
+		#noticeTab div h3 {position:absolute; top:0;}
+			.ntab1 h3 {left:0;}
+			.ntab2 h3 {left:85px;}
+			.ntab3 h3 {left:170px;}
+			.ntab2 ul, .ntab3 ul {display:none;}
+
+		#noticeTab div ul {width:328px; padding-top:30px;}
+		#noticeTab div ul li {height:18px; position:relative; padding-left:15px; background:url(../images/bor_dot.gif) no-repeat 5px 46%;}
+		#noticeTab div ul li span {position:absolute; right:0; width:40px; color:#a1a1a1;}
+
+		#noticeTab .more {position:absolute; left:286px; top:3px; width:43px;}
+
+		#galleryTab {position:relative; width:100%;}
+		#galleryTab div h3 {position:absolute; top:0;}
+			.gtab1 h3 {left:0;}
+			.gtab2 h3 {left:85px;}
+			.gtab2 ul {display:none;}
+		#galleryTab div ul {width:332px; padding-top:34px;}
+		#galleryTab div ul:after {content:""; display:block; clear:both;}
+		#galleryTab div ul li {width:76px; float:left; padding-right:8px; text-align:center;}
+		#galleryTab div ul li.gEnd {padding-right:0;}
+		#galleryTab div ul li a {}
+		#galleryTab div ul li a img {border:1px solid #b9b9b9; padding:2px;}
+		#galleryTab div ul li a span {display:block; padding:4px 4px 0 0;}
+
+		#galleryTab .more {position:absolute; left:286px; top:3px; width:43px;}
+
+	#cont2 {float:right; width:240px; border:1px solid #c7c7c7; margin-bottom:11px;}
+
+	#cont3 {clear:both; width:612px; border:1px solid #c7c7c7; height:107px; font-size:11px;}
+	#cont3 a {float:left;}
+	#cont3 dl {float:left; width:149px; padding:13px 0 0 13px; position:relative;}
+	#cont3 dl dt {}
+	#cont3 dl dd a {letter-spacing:-0.5px;}
+	#cont3 dl dd a span {float:left; width:85px; padding-top:14px;}
+	#cont3 dl dd a span b {font-weight:normal; display:block; padding-bottom:3px;}
+	#cont3 dl dd a img {position:absolute; right:8px; top:18px;}
+
+
+#container3 {clear:both; padding-top:11px;}
+#container3:after {content:""; display:block; clear:both;}
+	#container3 h3 {padding-bottom:10px;}
+	#container3 div ul {width:458px; padding-left:5px;}
+	#container3 div li {border-bottom:1px dashed #a8a8a8; height:20px; padding-top:6px; position:relative;}
+	#container3 div li span {position:absolute; right:0; color:#a1a1a1;}
+
+	#board1,#board2 {width:100%; width:481px; padding:13px 0 15px 13px; position:relative;}
+	#board1 {float:left; margin-right:11px; border:1px solid #c3c3c3;}
+	#board2 {float:right; border:1px solid #c3c3c3;}
+	#board1 h3, #board2 h3 {background:url(../images/ap_tit_dot.gif) no-repeat left 2px; padding-left:15px;}
+
+	#boardFrame1 {width:465px; height:82px; overflow:hidden; position:relative;}
+	#boardFrame2 {width:465px; height:82px; overflow:hidden; position:relative;}
+	
+#container3 div .more {position:absolute; right:17px; top:14px; width:43px;}

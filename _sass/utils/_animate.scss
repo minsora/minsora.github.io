@@ -1,33 +1,33 @@
 @include vendor-keyframes(cloud_left) {
-  0% {left:-700px;opacity:0;}
-  20% {left:-700px;opacity:0;}
-  100% {left:0;opaicity:1;}
+    0% {left:-700px;opacity:0;}
+    20% {left:-700px;opacity:0;}
+    100% {left:0;opaicity:1;}
 }
 @include vendor-keyframes(cloud_right) {
-  0% {right:-700px;opacity:0;}
-  20% {right:-700px;opacity:0;}
-  100% {right:0;opacity:1;}
+    0% {right:-700px;opacity:0;}
+    20% {right:-700px;opacity:0;}
+    100% {right:0;opacity:1;}
 }
 @include vendor-keyframes(skill_show) {
-  0% {top:-190px;opacity:0;}
-  100% {top:-220px;opacity:1;}
+    0% {top:-190px;opacity:0;}
+    100% {top:-220px;opacity:1;}
 }
 @include vendor-keyframes(tag_show) {
-  0% {opaicty:0;transform:scale(0.1)}
-  100% {opacity:1;transform:scale(1)}
+    0% {opaicty:0;transform:scale(0.1)}
+    100% {opacity:1;transform:scale(1)}
 }
 @include vendor-keyframes(typing) {
-  0% {width:0;}
-  26% {width:0;}
-  100% {width:14em;}
+    0% {width:0;}
+    26% {width:0;}
+    100% {width:14em;}
 }
 @include vendor-keyframes(pc_move) {
-  0% {transform:rotate(0);}
-  80% {transform:rotate(0);}
-  82% {transform:rotate(-3deg);}
-  84% {transform:rotate(3deg);}
-  86% {transform:rotate(-3deg);}
-  88% {transform:rotate(3deg);}
-  90% {transform:rotate(0);}
-  100% {transform:rotate(0);}
+    0% {transform:rotate(0);}
+    80% {transform:rotate(0);}
+    82% {transform:rotate(-3deg);}
+    84% {transform:rotate(3deg);}
+    86% {transform:rotate(-3deg);}
+    88% {transform:rotate(3deg);}
+    90% {transform:rotate(0);}
+    100% {transform:rotate(0);}
 }

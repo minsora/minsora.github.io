@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Sass"
+date:   2016-01-18 16:49:16 +0900
+categories: html&css
+---
+<!-- Sass : Syntactically Awesome Style Sheets (문법적으로 최고의 스타일 시트)<br>
+특징 : 유지보수 / 코드의 재활용성 / 코드의 간결성 / css의 단점 보완 -->
