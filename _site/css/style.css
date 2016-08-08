@@ -2044,6 +2044,12 @@ h3 {
         overflow: hidden;
         margin-left: 40px; }
 
+.list_study li {
+  margin-top: 30px; }
+  .list_study li .info_project {
+    margin-left: 0;
+    padding: 0; }
+
 @media (max-device-width: 736px) {
   .list_project li .img_project {
     width: 100%;

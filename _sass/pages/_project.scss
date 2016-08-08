@@ -111,6 +111,16 @@
         }
     }
 }
+.list_study {
+    li {
+        margin-top:30px;
+
+        .info_project {
+            margin-left:0;
+            padding:0;
+        }
+    }
+}
 
 @include respond-to(m_lg, all) {
     .list_project li {
