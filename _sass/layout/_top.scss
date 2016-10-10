@@ -21,8 +21,7 @@
         .link_logo {
             display:inline-block;
             font-weight:700;
-            font-size:2.2rem;
-            line-height:2.2rem;
+            font-size:1.8rem;
             font-family:$header-font-point;
             color:$header-font-color;
             letter-spacing:2px;
@@ -30,15 +29,6 @@
             &:hover {
                 text-decoration:none;
                 color:$header-bg-color;
-            }
-
-            img {
-                width:38px;
-                height:38px;
-                margin-right:5px;
-                @include prefix(border-radius, 100%);
-                opacity:0.9;
-                @include prefix(box-sizing, border-box);
             }
         }
     }

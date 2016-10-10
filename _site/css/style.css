@@ -485,25 +485,13 @@ body {
     .cont_top h2 .link_logo {
       display: inline-block;
       font-weight: 700;
-      font-size: 2.2rem;
-      line-height: 2.2rem;
+      font-size: 1.8rem;
       font-family: "Amatic SC", cursive;
       color: rgba(255, 255, 255, 0.9);
       letter-spacing: 2px; }
       .cont_top h2 .link_logo:hover {
         text-decoration: none;
         color: #F8C957; }
-      .cont_top h2 .link_logo img {
-        width: 38px;
-        height: 38px;
-        margin-right: 5px;
-        -webkit- border-radius: 100%;
-        -moz- border-radius: 100%;
-        border-radius: 100%;
-        opacity: 0.9;
-        -webkit- box-sizing: border-box;
-        -moz- box-sizing: border-box;
-        box-sizing: border-box; }
   .cont_top .btn_nav {
     float: right;
     position: relative;
