@@ -13,15 +13,14 @@
         h2 {
             position:relative;
             margin-bottom:50px;
-            font-weight:600;
-            font-size:3.2rem;
-            font-family:$header-font-point;
+            font-weight:400;
+            font-size:2.6rem;
             color:$title-font-color;
 
             &::before {
                 content:'';
                 position:absolute;
-                left:8px;
+                left:13px;
                 top:0px;
                 width:4px;
                 height:4px;
@@ -30,8 +29,8 @@
             }
         }
         h3 {
-            margin-bottom:20px;
-            padding:0 5px 5px;
+            margin-bottom:15px;
+            padding:0 0 6px;
             border-bottom:1px solid $footer-bg-color;
             font-weight:600;
             font-size:1.4rem;
@@ -53,7 +52,7 @@
 
             h2 {
                 margin-bottom:30px;
-                font-size:3rem;
+                font-size:2.6rem;
             }
         }
     }
@@ -64,7 +63,7 @@
         .cont_top {
             display:block;
             h2 {
-                margin-left:10px;
+                margin-left:15px;
                 .link_logo {
                     font-size:1.5rem;
                     img {
@@ -75,7 +74,7 @@
             }
             .btn_nav {
                 width:26px;
-                margin-right:10px;
+                margin-right:15px;
                 .ico_nav {
                     height:3px;
                     margin:8px 0;
@@ -90,8 +89,11 @@
             padding:30px 30px 50px;
 
             h2 {
-                margin-bottom:20px;
-                font-size:2.6rem;
+                margin-bottom:25px;
+                font-size:2rem;
+                &::before {
+                    left:7px;
+                }
             }
             h3 {
                 font-size:1.2rem;
