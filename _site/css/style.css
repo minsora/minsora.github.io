@@ -409,7 +409,7 @@ body {
       #container .cont_sub h2::before {
         content: '';
         position: absolute;
-        left: 13px;
+        left: 11px;
         top: 0px;
         width: 4px;
         height: 4px;
@@ -1917,7 +1917,7 @@ h3 {
   width: 50%;
   min-height: 300px; }
   .sub_profile dl, .sub_certify dl, .sub_skill dl, .sub_career dl, .sub_contact dl {
-    padding: 10px 10px 20px;
+    padding: 15px 0 30px;
     font-size: 1rem; }
     .sub_profile dl dt, .sub_certify dl dt, .sub_skill dl dt, .sub_career dl dt, .sub_contact dl dt {
       float: left;
@@ -1951,7 +1951,7 @@ h3 {
     margin: 10px 10px 0; }
 
 .list_project {
-  margin: 10px 10px 20px; }
+  margin: 15px 0 30px; }
   .list_project li {
     overflow: hidden;
     position: relative;
