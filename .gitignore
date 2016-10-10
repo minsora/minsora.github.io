@@ -2,3 +2,5 @@
 .sass-cache/008b877d3b43b5ad788491498f6aa37fe36a114b/_about.scssc
 
 _site/feed.xml
+
+*.scssc
