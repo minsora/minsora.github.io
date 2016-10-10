@@ -1918,15 +1918,16 @@ h3 {
   min-height: 300px; }
   .sub_profile dl, .sub_certify dl, .sub_skill dl, .sub_career dl, .sub_contact dl {
     padding: 10px 10px 20px;
-    font-size: 1rem;
-    color: #888; }
+    font-size: 1rem; }
     .sub_profile dl dt, .sub_certify dl dt, .sub_skill dl dt, .sub_career dl dt, .sub_contact dl dt {
       float: left;
-      padding-bottom: 20px; }
+      padding-bottom: 20px;
+      color: #888; }
     .sub_profile dl dd, .sub_certify dl dd, .sub_skill dl dd, .sub_career dl dd, .sub_contact dl dd {
       display: block;
       margin-left: 130px;
-      padding-bottom: 20px; }
+      padding-bottom: 20px;
+      color: #555; }
       .sub_profile dl dd .txt_date, .sub_certify dl dd .txt_date, .sub_skill dl dd .txt_date, .sub_career dl dd .txt_date, .sub_contact dl dd .txt_date {
         display: block;
         font-size: 0.85rem;
