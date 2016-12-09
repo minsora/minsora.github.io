@@ -1,11 +1,11 @@
-/* 기본 폰트 */
+// 기본 폰트
 @mixin basicFont {
     font-size:14px;
     line-height:18px;
     color:$text-font-color;
     font-family:$text-font-family;
 }
-/* float 해제 */
+// float 해제
 @mixin clearfix {
     &::after {
         content: '';
@@ -14,7 +14,7 @@
         *zoom:1;
     }
 }
-/* 대체 텍스트 */
+// 대체 텍스트
 @mixin ir_pm {
     display:block;
     overflow:hidden;
@@ -32,7 +32,7 @@
     line-height:0;
     text-indent:-9999px;
 }
-/* 말줄임 */
+// 말줄임
 @mixin text-overflow {
     overflow:hidden;
     text-overflow:ellipsis;
@@ -48,13 +48,13 @@
     overflow:hidden;
     text-overflow:ellipsis;
 }
-/* 프리픽스 */
+// 프리픽스
 @mixin prefix($property, $value) {
     #{-webkit-$property}: $value;
          #{-moz-$property}: $value;
                     #{$property}: $value;
 }
-/* 프레임 테두리 */
+// 프레임 테두리
 @mixin frame_line($size, $color) {
     &::after {
         content:'';
@@ -67,15 +67,15 @@
         @include prefix(box-sizing, border-box);
     }
 }
-/* 키프레임 */
+// 키프레임
 @mixin vendor-keyframes($name) {
-    /* @-moz-keyframes #{$name} { @content; } */
+    // @-moz-keyframes #{$name} { @content; }
     @-webkit-keyframes #{$name} { @content; }
-    /* @-o-keyframes #{$name} { @content; }
-    @-ms-keyframes #{$name} { @content; } */
+    // @-o-keyframes #{$name} { @content; }
+    @-ms-keyframes #{$name} { @content; }
     @keyframes #{$name} { @content; }
 }
-/* 반응형 */
+// 반응형
 $breakpoints: (
     'm_sm': (max-device-width: 320px),
     'm_md': (min-device-width: 320px) and (max-device-width: 414px),

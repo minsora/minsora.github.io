@@ -1,265 +1,155 @@
 <!DOCTYPE html>
-<html>
-
-    <head>
+<html lang="ko">
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sora's</title>
+    <link rel="shortcut icon" href="/images/favicon_m.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon_m.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html, body {width:100%;height:100%}
+        body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, textarea, button {margin:0;padding:0}
+        body, h1, h2, h3, h4, th, td, input, select, textarea, button {font-family:'Source Sans Pro', 'Malgun Gothic', '굴림', Gulim, AppleSDGothicNeo, sans-serif}
+        body {background-color:#fff;*word-break:break-all;-ms-word-break:break-all;word-break:break-all}
+        fieldset {border:0 none}
+        iframe, img {border:0 none;vertical-align:top}
+        dl, ul, ol, menu, li {list-style:none}
+        blockquote, q {quotes:none}
+        blockquote:before, blockquote:after, q:before, q:after {content:'';content:none}
+        input, select, textarea, button {vertical-align:middle}
+        textarea {resize:none}
+        input::-ms-clear {display:none}
+        button {overflow:visible;border:0 none;background-color:transparent;cursor:pointer}
+        button::-moz-focus-inner {border:0;padding:0}
+        a {color:#444;text-decoration:none}
+        a:hover {text-decoration:underline}
+        a:active {background-color:transparent}
+        address, caption, cite, code, dfn, em, var, i {font-style:normal;font-weight:normal}
+        table {border-collapse:collapse;border-spacing:0}
+        article, section, nav, header, menu, aside, canvas, footer {display:block;margin:0;padding:0}
 
-    <title>Sora's Portfolio</title>
-    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-">
+        .screen_out {display:block;overflow:hidden;position:absolute;left:-9999px;width:1px;height:1px;font-size:0;line-height:0;text-indent:-9999px}
 
-    <!--[if lte IE 8]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+        .wrap {display:table;width:100%;height:100%;}
+        .bg_type1 {position:fixed;left:0;top:0;z-index:-1;width:50%;height:100%;background-color:rgba(143,165,212,1);}
+        .bg_type2 {position:fixed;right:0;top:0;z-index:-1;width:50%;height:100%;background-color:rgba(255,199,199,1);}
+        .bg_txt {position:fixed;left:0;top:0;z-index:-1;width:100%;height:100%;}
+        .bg_txt .txt {position:absolute;width:500px;color:#fff;}
+        .bg_txt .txt:nth-child(1) {left:5%;top:5%;font-size:2.5rem;opacity:0.1;}
+        .bg_txt .txt:nth-child(2) {left:45%;top:55%;font-size:4rem;opacity:0.2;}
+        .bg_txt .txt:nth-child(3) {left:58%;top:92%;font-size:2.5rem;opacity:0.2;}
+        .bg_txt .txt:nth-child(4) {left:85%;top:25%;font-size:3.5rem;opacity:0.2;}
+        .bg_txt .txt:nth-child(5) {left:65%;top:10%;font-size:3rem;opacity:0.2;}
+        .bg_txt .txt:nth-child(6) {left:30%;top:15%;font-size:4rem;opacity:0.1;}
+        .bg_txt .txt:nth-child(7) {left:90%;top:55%;font-size:4rem;opacity:0.2;}
+        .bg_txt .txt:nth-child(8) {left:25%;top:85%;font-size:3rem;opacity:0.1;}
+        .bg_txt .txt:nth-child(9) {left:90%;top:-2%;font-size:4rem;opacity:0.2;}
+        .bg_txt .txt:nth-child(10) {left:75%;top:75%;font-size:3rem;opacity:0.2;}
+        .bg_txt .txt:nth-child(11) {left:0;top:35%;font-size:3rem;opacity:0.1;}
+        .bg_txt .txt:nth-child(12) {left:0%;top:70%;font-size:2.5rem;opacity:0.1;}
 
-    <link rel="shortcut icon" href="/images/favicon_m.ico?v=2" type="image/x-icon">
-    <link rel="icon" href="/images/favicon_m.ico?v=2" type="image/x-icon">
+        .group {display:table-cell;position:relative;width:100%;vertical-align:middle;text-align:center;}
+        .top {margin-top:-45px;margin-bottom:3.5rem;}
+        .top .logo {display:inline-block;position:relative;z-index:10;padding:1rem 1.5rem;box-sizing:border-box;font-weight:700;font-size:6rem;line-height:5rem;color:#555;background-color:rgba(255,255,255,1);letter-spacing:1px;text-transform:uppercase;text-align:center;box-shadow:1px 1px 2px rgba(0,0,0,0.2);}
+        .cont {float:left;width:50%;box-sizing:border-box;}
+        .cont .name {font-weight:700;font-size:4rem;color:#fff;text-transform:uppercase;text-shadow:1px 1px 2px rgba(0,0,0,0.1);}
+        .cont .list {display:inline-block;margin-top:2rem;}
+        .cont .list li {display:block;padding:0 0 0.8rem;font-weight: 300;font-size:1.6rem;color:rgba(255,255,255,1);text-align:left;letter-spacing:1px;text-shadow:1px 1px 2px rgba(0,0,0,0.05);}
+        .cont .list li .fa {margin-right:3px;}
+        .cont_type1 {padding-right:160px;}
+        .cont_type1 .list {width:326px;}
+        .cont_type2 {padding-left:140px;}
+        .cont_type2 .list {width:152px;}
 
-    <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+        .and {position:absolute;left:50%;top:50%;z-index:1;width:70px;height:70px;margin:-56px 0 0 -35px;font-weight:600;font-size:3.8rem;line-height:70px;color:#fff;text-align:center;text-shadow:1px 1px 1px rgba(0,0,0,0.1);}
+        .and::before {content:'';position:absolute;right:90px;top:50%;width:125px;height:3px;margin-top:-1px;background-color:rgba(255,199,199,0.8);box-shadow:1px 1px 2px rgba(0,0,0,0.1);}
+        .and::after {content:'';position:absolute;left:90px;top:50%;width:125px;height:3px;margin-top:-1px;background-color:rgba(143,165,212,0.8);box-shadow:1px 1px 2px rgba(0,0,0,0.1);}
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+        .btns {position:relative;z-index:100;}
+        .btns .link {position:fixed;left:0;top:0;width:50%;height:100%;}
+        .btns .link:last-child {left:inherit;right:0;}
 
-    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        @media (max-width: 1100px) {
+            .cont_type1 {padding-right:0;}
+            .cont_type2 {padding-left:0;}
 
-    <script src="/js/sideBtn.js"></script>
+            .and {display:none;}
+        }
+        @media (max-width: 768px) {
+            .top .logo {font-size:3.5rem;line-height:2.5rem;}
 
-    <script>
-        $(document).ready(function() {
-            var pathname = window.location.pathname,
-                $list = $(".list_gnb a");
+            .cont .name {font-size:2.8rem;}
+            .cont .list li {font-size:1.2rem;}
+            .cont_type1 .list {width:234px;}
+            .cont_type2 .list {width:110px;}
+        }
+        @media (max-width: 600px) {
+            .bg_type1 {position:fixed;left:0;top:0;z-index:-1;width:100%;height:50%;background-color:rgba(143,165,212,1);}
+            .bg_type2 {position:fixed;right:0;top:50%;z-index:-1;width:100%;height:50%;background-color:rgba(255,199,199,1);}
 
-            $list.each(function(index) {
-                if (pathname.toUpperCase().indexOf($(this).text().toUpperCase()) != -1){
-                    $(this).parent().addClass('on').parent().siblings().removeClass('on');
-                }
-            });
-        });
-    </script>
+            .top {position:absolute;left:50%;top:50%;margin:-36px 0 0 -117px;}
+
+            .cont {display:table;width:100%;}
+            .cont_type1 {height:50%;padding-bottom:18px;}
+            .cont_type2 {height:50%;padding-top:18px;}
+            .cont .inner {display:table-cell;vertical-align:middle;}
+
+            .btns {position:relative;z-index:100;}
+            .btns .link {position:fixed;left:0;top:0;width:100%;height:50%;}
+            .btns .link:last-child {left:inherit;right:0;top:50%;}
+        }
+    </style>
 </head>
-
-
-    <body>
-
-        <div id="wrapper">
-            <header id="header">
-    <div class="inner">
-        <div class="cont">
-            <h1 class="logo">
-                <a class="link_logo" href="/">
-                    <span class="thumb_logo" href="/"></span>
-                    Sora's Portfolio
-                </a>
-            </h1>
-            <nav id="nav">
-                <h2>navigation</h2>
-                <ul class="list_nav">
-                    <li>
-                        <a href="/about">About</a>
-                    </li>
-                    <li>
-                        <a href="/project">Project</a>
-                    </li>
-                    <li>
-                        <a href="/portfolio">Portfolio</a>
-                    </li>
-                    <!-- <li>
-                        <a href="https://ssola129.github.io/" target="_blank">Blog</a>
-                    </li> -->
-                </ul>
-            </nav>
-            <div class="sns_intro">
-                <a href="http://ssola129.github.io/" class="link" target="_blank"><i class="fa fa-desktop" aria-hidden="true"></i></a>
-                <a href="https://github.com/ssola129" class="link" target="_blank"><i class="fa fa-github-alt"></i></a>
-                <a href="https://www.facebook.com/ssola129" class="link" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a href="https://www.instagram.com/ssola129/" class="link" target="_blank"><i class="fa fa-instagram"></i></a>
-                <a href="mailto:ssola129@gmail.com" class="link"><i class="fa fa-envelope"></i></a>
+<body>
+    <div class="wrap">
+        <div class="bg_type1"></div>
+        <div class="bg_type2"></div>
+        <div class="bg_txt">
+            <span class="txt">UI</span>
+            <span class="txt">HTML</span>
+            <span class="txt">CSS</span>
+            <span class="txt">Gulp</span>
+            <span class="txt">Git</span>
+            <span class="txt">Scss</span>
+            <span class="txt">Javascript</span>
+            <span class="txt">jQuery</span>
+            <span class="txt">www</span>
+            <span class="txt">Markup</span>
+            <span class="txt">Design</span>
+            <span class="txt">Responsive</span>
+        </div>
+        <div class="group">
+            <div class="top"><h1 class="logo">Sora's</h1></div>
+            <div class="cont cont_type1">
+                <div class="inner">
+                    <h2 class="name">Portfolio</h2>
+                    <ul class="list">
+                        <li><i class="fa fa-paperclip" aria-hidden="true"></i> About</li>
+                        <li><i class="fa fa-paperclip" aria-hidden="true"></i> Project</li>
+                        <li><i class="fa fa-paperclip" aria-hidden="true"></i> Portfolio</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cont cont_type2">
+                <div class="inner">
+                    <h2 class="name">Blog</h2>
+                    <ul class="list">
+                        <li><i class="fa fa-paperclip" aria-hidden="true"></i> Info</li>
+                        <li><i class="fa fa-paperclip" aria-hidden="true"></i> Snippet</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="and">
+                &amp;
             </div>
         </div>
+        <div class="btns">
+            <a href="http://minsora.github.io/home" class="link"><span class="screen_out">Portfolio 바로가기</span></a>
+            <a href="https://ssola129.github.io" class="link"><span class="screen_out">Blog 바로가기</span></a>
+        </div>
     </div>
-</header>
-
-            <section id="container">
-                <div class="cont_top">
-    <h2>
-        <a class="link_logo" href="/">
-            Sora's Portfolio
-        </a>
-    </h2>
-    <a href="javascript:;" class="btn_nav"><span class="ico_nav">메뉴 열기/닫기</span></a>
-</div>
-
-                <div class="cont_home">
-    <div class="group_guide">
-        <div class="item_cloud">
-            <span class="detail_cloud">
-                <span class="point_cloud"></span>
-                    <span class="point_cloud"></span>
-                    <span class="point_cloud"></span>
-                    <span class="point_cloud"></span>
-                    <span class="point_cloud"></span>
-                </span>
-            </span>
-            <span class="detail_cloud">
-                <span class="point_cloud"></span>
-                    <span class="point_cloud"></span>
-                    <span class="point_cloud"></span>
-                    <span class="point_cloud"></span>
-                    <span class="point_cloud"></span>
-                </span>
-            </span>
-        </div>
-        <ul class="list_skill">
-            <li>UI</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Scss</li>
-            <li>Gulp</li>
-            <li>js</li>
-            <li>Git</li>
-        </ul>
-        <div class="item_mobile">
-            <span class="mobile_monitor">
-                <span class="item_speaker"></span>
-                <span class="item_screen">
-                    <span class="detail_web"></span>
-                    <span class="detail_web"></span>
-                    <span class="detail_web">
-                        <span class="point_web"></span>
-                        <span class="point_web"></span>
-                        <span class="point_web"></span>
-                        <span class="point_web"></span>
-                        <span class="point_web"></span>
-                        <span class="point_web"></span>
-                        <span class="point_web"></span>
-                        <span class="point_web"></span>
-                        <span class="point_web"></span>
-                    </span>
-                    <span class="detail_web"></span>
-                    <span class="detail_web"></span>
-                    <span class="detail_web">HTML5</span>
-                    <span class="detail_web">CSS3</span>
-                    <span class="detail_web">Scss</span>
-                    <span class="detail_web">js</span>
-                    <span class="detail_web">Git</span>
-                    <span class="detail_web">Gulp</span>
-                    <span class="detail_web">Markup</span>
-                    <span class="detail_web">Design</span>
-                    <span class="detail_web">Jekyll</span>
-                </span>
-                <span class="item_button"></span>
-            </span>
-        </div>
-        <div class="item_pc">
-            <span class="pc_monitor">
-                <span class="item_screen">
-                    <span class="detail_web"></span>
-                    <span class="detail_web"></span>
-                    <span class="detail_web">
-                        <span class="point_web"></span>
-                        <span class="point_web"></span>
-                        <span class="point_web"></span>
-                        <span class="point_web"></span>
-                        <span class="point_web"></span>
-                        <span class="point_web"></span>
-                        <span class="point_web"></span>
-                        <span class="point_web"></span>
-                        <span class="point_web"></span>
-                    </span>
-                    <span class="detail_web"></span>
-                    <span class="detail_web"></span>
-                    <span class="detail_web"></span>
-                    <span class="detail_web"></span>
-                    <span class="detail_web"></span>
-                    <span class="detail_web"></span>
-                    <span class="detail_web"></span>
-                    <span class="detail_web"></span>
-                </span>
-            </span>
-            <span class="pc_keyboard">
-                <span class="item_keyboard">
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                </span>
-                <span class="item_keyboard">
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                </span>
-                <span class="item_keyboard">
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                    <span class="detail_key"></span>
-                </span>
-            </span>
-        </div>
-        <ul class="list_tag">
-            <li>header</li>
-            <li>footer</li>
-            <li>.com</li>
-            <li>www</li>
-            <li>Design</li>
-            <li>Mark Up</li>
-            <li>Wordpress</li>
-            <li>Jekyll</li>
-            <li>Photoshop</li>
-            <li>Crossbrowsing</li>
-        </ul>
-        <!-- <strong class="txt_guide">
-            Sora's Portfolio
-        </strong> -->
-    </div>
-    <div class="txt_cmt">
-        <i class="fa fa-cog"></i> 이 사이트는 반응형으로 작업되어있으며, 크롬 브라우저에 최적화되어 있습니다.
-    </div>
-</div>
-
-            </section>
-            <footer id="footer">
-    <div class="txt_copyright">&copy; minsora 2016. All rights reserved.</div>
-</footer>
-
-            <div class="dimmed" style="display:none;"></div>
-        </div>
-
-    </body>
-
+</body>
 </html>

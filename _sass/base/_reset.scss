@@ -38,9 +38,9 @@ input,select,textarea,button {
 }
 textarea {
     resize:none;
-} /* 사이즈 조절 해지 */
+} // 사이즈 조절 해지
 
-/* input {outline:none} 선택적 사용 - 접근성 저하 주의 */
+// input {outline:none} 선택적 사용 - 접근성 저하 주의
 
 input::-ms-clear {
     display:none;
@@ -73,7 +73,7 @@ address,caption,cite,code,dfn,em,var,i {
 table {
     border-collapse:collapse;
     border-spacing:0;
-} /* 테이블 초기화 */
+} // 테이블 초기화
 legend {
     *width:0;
 }
@@ -81,28 +81,28 @@ hr {
     display:none;
 }
 
-/* html5 대응 */
+// html5 대응
 article,section,nav,header,menu,aside,canvas,footer {
     display:block;
     margin:0;
     padding:0;
 }
 
-/* global */
+// global
 .hidden {
     overflow:hidden !important;
 }
 
-/* placeholder */
+// placeholder
 ::-webkit-input-placeholder{
     color:#aaa;
-}/*Safari & Chrome*/
+} // Safari & Chrome
 ::-moz-placeholder{
     color:#aaa;
-}/*Firefox*/
+} // Firefox
 :-moz-placeholder{
     color:#aaa;
 }
 :-ms-input-placeholder {
      color:#aaa;
-}/*IE*/
+} // IE
