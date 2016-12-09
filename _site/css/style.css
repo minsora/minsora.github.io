@@ -442,12 +442,14 @@ body {
           height: 2px; }
     #container .cont_sub {
       margin-top: 53px;
-      padding: 30px 30px 50px; }
+      padding: 30px 15px 50px; }
       #container .cont_sub h2 {
         margin-bottom: 25px;
         font-size: 2.2rem; }
         #container .cont_sub h2::before {
-          left: 7px; } }
+          left: 7px; }
+      #container .cont_sub h3 {
+        font-size: 1.3rem; } }
 .cont_top {
   display: none;
   position: fixed;
@@ -1866,21 +1868,21 @@ h3 {
   min-height: 300px; }
   .sub_profile dl, .sub_certify dl, .sub_skill dl, .sub_career dl, .sub_contact dl {
     padding: 0 0 30px;
-    font-size: 0.95rem; }
+    font-size: 0.9rem; }
     .sub_profile dl dt, .sub_certify dl dt, .sub_skill dl dt, .sub_career dl dt, .sub_contact dl dt {
       float: left;
-      padding-bottom: 20px;
+      padding-bottom: 15px;
       color: #888; }
     .sub_profile dl dd, .sub_certify dl dd, .sub_skill dl dd, .sub_career dl dd, .sub_contact dl dd {
       display: block;
-      margin-left: 140px;
+      margin-left: 110px;
       padding-right: 25px;
-      padding-bottom: 20px;
+      padding-bottom: 15px;
       color: #666; }
       .sub_profile dl dd .txt_date, .sub_certify dl dd .txt_date, .sub_skill dl dd .txt_date, .sub_career dl dd .txt_date, .sub_contact dl dd .txt_date {
         display: block;
         padding-top: 5px;
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         color: #999; }
 
 @media (max-width: 1400px) {
@@ -1903,7 +1905,7 @@ h3 {
     margin: 10px 10px 0; }
 
 .list_project {
-  margin: 15px 0 30px; }
+  margin: 0 0 30px; }
   .list_project li {
     overflow: hidden;
     position: relative;
@@ -1923,17 +1925,14 @@ h3 {
         top: 50%;
         -webkit-transform: translate(-50%, -50%) scale(1);
         -moz-transform: translate(-50%, -50%) scale(1);
-        -o-transform: translate(-50%, -50%) scale(1);
         -webkit-transition-duration: 0.5s;
         -moz-transition-duration: 0.5s;
-        -o-transition-duration: 0.5s;
         width: 100%;
         height: 100%;
         vertical-align: top; }
       .list_project li .img_project:hover img {
         -webkit-transform: translate(-50%, -50%) scale(1.1);
-        -moz-transform: translate(-50%, -50%) scale(1.1);
-        -o-transform: translate(-50%, -50%) scale(1.1); }
+        -moz-transform: translate(-50%, -50%) scale(1.1); }
       .list_project li .img_project::after {
         content: '';
         position: absolute;
@@ -2001,26 +2000,29 @@ h3 {
     padding: 0; }
 
 @media (max-device-width: 736px) {
-  .list_project li .img_project {
-    width: 100%;
-    height: auto; }
-    .list_project li .img_project img {
-      position: relative;
-      left: 0;
-      top: 0;
-      -webkit-transform: translate(0, 0);
-      -moz-transform: translate(0, 0);
-      -o-transform: translate(0, 0); }
-    .list_project li .img_project:hover {
-      -webkit-transform: translate(0, 0) scale(1);
-      -moz-transform: translate(0, 0) scale(1);
-      -o-transform: translate(0, 0) scale(1); }
-  .list_project li .info_project {
-    float: left;
-    width: 100%;
-    margin-left: 0;
-    padding-left: 0;
-    padding-top: 10px; } }
+  .list_project li {
+    padding-bottom: 18px;
+    border-bottom: 1px dashed #ccc; }
+    .list_project li:last-child {
+      border-bottom: 0 none; }
+    .list_project li .img_project {
+      width: 100%;
+      height: auto; }
+      .list_project li .img_project img {
+        position: relative;
+        left: 0;
+        top: 0;
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0); }
+      .list_project li .img_project:hover {
+        -webkit-transform: translate(0, 0) scale(1);
+        -moz-transform: translate(0, 0) scale(1); }
+    .list_project li .info_project {
+      float: left;
+      width: 100%;
+      margin-left: 0;
+      padding-left: 0;
+      padding-top: 10px; } }
 .list_post {
   overflow: hidden; }
   .list_post li {
