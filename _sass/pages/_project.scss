@@ -93,17 +93,20 @@
         }
         .list_info {
             padding-top:10px;
-            font-size:0.8rem;
-            line-height:1.3rem;
-            color:#808080;
 
             dt {
                 float:left;
+                font-size:0.8rem;
+                line-height:1.3rem;
+                color:#808080;
             }
             dd {
                 display:block;
                 overflow:hidden;
                 margin-left:40px;
+                font-size:0.8rem;
+                line-height:1.3rem;
+                color:#808080;
             }
         }
     }

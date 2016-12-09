@@ -1982,16 +1982,19 @@ h3 {
       font-size: 0.85rem;
       color: #808080; }
     .list_project li .list_info {
-      padding-top: 10px;
-      font-size: 0.8rem;
-      line-height: 1.3rem;
-      color: #808080; }
+      padding-top: 10px; }
       .list_project li .list_info dt {
-        float: left; }
+        float: left;
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+        color: #808080; }
       .list_project li .list_info dd {
         display: block;
         overflow: hidden;
-        margin-left: 40px; }
+        margin-left: 40px;
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+        color: #808080; }
 
 .list_study li {
   margin-top: 30px; }
