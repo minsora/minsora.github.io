@@ -1,5 +1,5 @@
 h3 {
-    margin-right:20px;
+    margin-right:25px;
 }
 .sub_profile, .sub_certify, .sub_skill, .sub_career, .sub_contact {
         float:left;
@@ -18,7 +18,7 @@ h3 {
         dd {
             display:block;
             margin-left:140px;
-            padding-right:20px;
+            padding-right:25px;
             padding-bottom:20px;
             color:#666;
 
@@ -40,6 +40,12 @@ h3 {
         float:none;
         width:100%;
         min-height:inherit;
+
+        dl {
+            dd {
+                padding-right:0;
+            }
+        }
     }
 }
 @include respond-to(sm, all) {

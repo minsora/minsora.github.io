@@ -445,11 +445,9 @@ body {
       padding: 30px 30px 50px; }
       #container .cont_sub h2 {
         margin-bottom: 25px;
-        font-size: 2rem; }
+        font-size: 2.2rem; }
         #container .cont_sub h2::before {
-          left: 7px; }
-      #container .cont_sub h3 {
-        font-size: 1.5rem; } }
+          left: 7px; } }
 .cont_top {
   display: none;
   position: fixed;
@@ -470,7 +468,7 @@ body {
     .cont_top h2 .link_logo {
       display: inline-block;
       padding-top: 4px;
-      font-weight: 300;
+      font-weight: 400;
       font-size: 1.2rem;
       font-family: "Source Sans Pro", cursive;
       color: rgba(255, 255, 255, 0.9);
@@ -1860,7 +1858,7 @@ body {
         -webkit-animation: typing 5s steps(32, end), blink-caret 1s step-end infinite;
         animation: typing 5s steps(32, end), blink-caret 1s step-end infinite; } }
 h3 {
-  margin-right: 20px; }
+  margin-right: 25px; }
 
 .sub_profile, .sub_certify, .sub_skill, .sub_career, .sub_contact {
   float: left;
@@ -1876,7 +1874,7 @@ h3 {
     .sub_profile dl dd, .sub_certify dl dd, .sub_skill dl dd, .sub_career dl dd, .sub_contact dl dd {
       display: block;
       margin-left: 140px;
-      padding-right: 20px;
+      padding-right: 25px;
       padding-bottom: 20px;
       color: #666; }
       .sub_profile dl dd .txt_date, .sub_certify dl dd .txt_date, .sub_skill dl dd .txt_date, .sub_career dl dd .txt_date, .sub_contact dl dd .txt_date {
@@ -1892,7 +1890,9 @@ h3 {
   .sub_profile, .sub_certify, .sub_skill, .sub_career, .sub_contact {
     float: none;
     width: 100%;
-    min-height: inherit; } }
+    min-height: inherit; }
+    .sub_profile dl dd, .sub_certify dl dd, .sub_skill dl dd, .sub_career dl dd, .sub_contact dl dd {
+      padding-right: 0; } }
 @media (max-width: 800px) {
   .sub_profile dl, .sub_certify dl, .sub_skill dl, .sub_career dl, .sub_contact dl {
     padding-left: 0; } }
