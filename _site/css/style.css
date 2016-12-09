@@ -14,7 +14,7 @@
     opacity: 0; }
   100% {
     left: 0;
-    opaicity: 1; } }
+    opacity: 1; } }
 @-ms-keyframes cloud_left {
   0% {
     left: -700px;
@@ -24,7 +24,7 @@
     opacity: 0; }
   100% {
     left: 0;
-    opaicity: 1; } }
+    opacity: 1; } }
 @keyframes cloud_left {
   0% {
     left: -700px;
@@ -34,7 +34,7 @@
     opacity: 0; }
   100% {
     left: 0;
-    opaicity: 1; } }
+    opacity: 1; } }
 @-webkit-keyframes cloud_right {
   0% {
     right: -700px;
@@ -88,21 +88,21 @@
     opacity: 1; } }
 @-webkit-keyframes tag_show {
   0% {
-    opaicty: 0;
+    opacity: 0;
     transform: scale(0.1); }
   100% {
     opacity: 1;
     transform: scale(1); } }
 @-ms-keyframes tag_show {
   0% {
-    opaicty: 0;
+    opacity: 0;
     transform: scale(0.1); }
   100% {
     opacity: 1;
     transform: scale(1); } }
 @keyframes tag_show {
   0% {
-    opaicty: 0;
+    opacity: 0;
     transform: scale(0.1); }
   100% {
     opacity: 1;
