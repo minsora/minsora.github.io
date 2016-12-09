@@ -15,26 +15,18 @@
             margin-bottom:50px;
             font-weight:400;
             font-size:2.6rem;
-            color:$title-font-color;
-
-            &::before {
-                content:'';
-                position:absolute;
-                left:11px;
-                top:0px;
-                width:4px;
-                height:4px;
-                background-color:$title-font-color;
-                @include prefix(border-radius, 50%);
-            }
+            font-family:$header-font-point;
+            color:$header-bg-color;
+            letter-spacing:1px;
         }
         h3 {
-            margin-bottom:15px;
-            padding:0 0 6px;
-            border-bottom:1px solid $footer-bg-color;
-            font-weight:600;
+            margin-bottom:20px;
+            padding:0 0 10px;
+            border-bottom:1px solid rgba(52,73,94,0.6);
+            font-weight:500;
             font-size:1.4rem;
-            color:$footer-bg-color;
+            color:rgba(52,73,94,0.8);
+            opacity:0.8;
         }
         h4 {
             font-weight:600;
@@ -50,7 +42,6 @@
 
         .cont_sub {
             h2 {
-                margin-bottom:30px;
                 font-size:2.6rem;
             }
         }
@@ -69,7 +60,7 @@
                 margin-right:15px;
                 .ico_nav {
                     height:2px;
-                    margin:9px 0;
+                    margin:8px 0;
                 }
                 &::before,&::after {
                     height:2px;

@@ -6,7 +6,7 @@
     z-index:100;
     width:100%;
     padding:10px 0;
-    background-color:$footer-bg-color;
+    background-color:$header-bg-color;
 
     h2 {
         float:left;
@@ -20,15 +20,17 @@
         }
         .link_logo {
             display:inline-block;
-            font-weight:700;
-            font-size:1.7rem;
+            padding-top:4px;
+            font-weight:300;
+            font-size:1.2rem;
             font-family:$header-font-point;
             color:$header-font-color;
-            letter-spacing:2px;
+            letter-spacing:1px;
+            vertical-align:top;
 
             &:hover {
                 text-decoration:none;
-                color:$header-bg-color;
+                color:$footer-bg-color;
             }
         }
     }
@@ -37,7 +39,7 @@
         float:right;
         position:relative;
         width:32px;
-        margin-top:6px;
+        margin-top:7px;
         margin-right:15px;
 
         .ico_nav {
@@ -72,7 +74,7 @@
 
         &:hover {
             .ico_nav, &:before, &:after {
-                background-color:$header-bg-color;
+                background-color:$footer-bg-color;
             }
         }
     }
@@ -81,19 +83,8 @@
     .cont_top {
         display:block;
         background-color:$header-bg-color;
-        h2 {
-            .link_logo {
-                @include prefix(text-shadow,1px 2px 1px rgba(0, 0, 0, 0.1));
-                img {
-                     @include prefix(box-shadow,1px 1px 1px rgba(0, 0, 0, 0.1));
-                }
-            }
-        }
-        .btn_nav {
-            .ico_nav, &:before, &:after {
-                @include prefix(box-shadow,1px 1px 1px rgba(0, 0, 0, 0.1));
-            }
 
+        .btn_nav {
             &:hover {
                 .ico_nav, &:before, &:after {
                     background-color:$header-font-color;

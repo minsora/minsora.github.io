@@ -8,29 +8,25 @@
     background-color:$header-bg-color;
     text-align:center;
 
-    h1 {
-        padding-top:65px;
-        font-size:2.6rem;
+    .inner {
+        display: table;
+        width: 100%;
+        height: 100%;
 
-        .link_profile {
-            display:block;
-            width:140px;
-            height:140px;
-            margin:0 auto 10px;
-
-            &:hover {
-                text-decoration:none;
-            }
-
-            img {
-                width:100%;
-                height:100%;
-                @include prefix(border-radius, 100%);
-                opacity:0.9;
-            }
+        .cont {
+            display: table-cell;
+            position: relative;
+            z-index: 1;
+            vertical-align: middle;
         }
+    }
+
+    h1 {
+        font-size:1.6rem;
+
         .link_logo {
             display:inline-block;
+            font-weight:300;
             font-family:$header-font-point;
             color:$header-font-color;
             letter-spacing:1px;
@@ -38,26 +34,32 @@
             &:hover {
                 text-decoration:none;
             }
+
+            .thumb_logo {
+                display:block;
+                width: 130px;
+                height: 130px;
+                margin:0 auto 20px;
+                border-radius: 100%;
+                @include thumb_msr;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+            }
         }
     }
-    .txt_profile {
-        display:block;
-        margin-bottom:40px;
-        font-weight:300;
-        font-size:0.85rem;
-        color:rgba(255,255,255,0.8);
-        letter-spacing:-0.5px;
-    }
     #nav {
+        margin-top:40px;
+
         h2 {
             @include screen_out;
         }
-        .list_gnb {
+        .list_nav {
             li {
                 a {
                     display:block;
-                    padding:10px 0;
-                    font-size:1.5rem;
+                    padding:12px 0;
+                    font-weight:300;
+                    font-size:1.1rem;
                     font-family:$header-font-point;
                     color:$header-font-color;
                     letter-spacing:1px;
@@ -86,24 +88,17 @@
             }
         }
     }
-    .list_sns {
-        overflow:hidden;
-        position:absolute;
-        left:0;
-        bottom:0;
-        width:100%;
-        padding:1em 0;
+    .sns_intro {
+        width: 100%;
+        margin-top:40px;
+        padding-bottom: 30px;
+        font-size: 0;
 
-        li {
-            display:inline-block;
-            padding:4px;
-
-            .link_sns {
-                display:block;
-                padding:5px;
-                font-size:1.3rem;
-                color:rgba(255,255,255,0.8);
-            }
+        .link {
+            display: inline-block;
+            margin: 0 6px;
+            font-size: 1.0rem;
+            color: #fff;
         }
     }
 }
@@ -125,20 +120,28 @@
         width:$header-width-sm;
 
         h1 {
-            padding-top:30px;
-            font-size:1.8rem;
+            font-size:1.5rem;
 
-            .link_profile {
-                width:100px;
-                height:100px;
-                margin-bottom:0;
-            }
             .link_logo {
-                margin-bottom:20px;
+                .thumb_logo {
+                    width:100px;
+                    height:100px;
+                }
             }
         }
-        .txt_profile {
-            display:none;
+        #nav {
+            margin-top:30px;
+
+            .list_nav {
+                li {
+                    a {
+                        padding:10px 0;
+                    }
+                }
+            }
+        }
+        .sns_intro {
+            margin-top:30px;
         }
     }
 }

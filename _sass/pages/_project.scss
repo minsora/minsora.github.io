@@ -12,7 +12,7 @@
     li {
         overflow:hidden;
         position:relative;
-        margin-top:30px;
+        margin-top:20px;
 
         &:first-child {
             margin-top:0;
@@ -79,7 +79,7 @@
             vertical-align:top;
 
             &:hover {
-                background-color:#f5c000;
+                background-color:$footer-bg-color;
             }
         }
         span.btn_project {
